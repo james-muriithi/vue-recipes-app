@@ -7,13 +7,13 @@
         <a href="#"
           ><img
             class="img-fluid w-100"
-            src="../../assets/fast-food.svg"
+            :src="imgSrc"
             alt=""
         /></a>
       </div>
       <div class="padding-lr-30px padding-tb-20px">
         <h5 class="margin-bottom-20px margin-top-10px">
-          <a class="text-black" href="#">Slow Cooker Loaded Potato Soup</a>
+          <a class="text-black" href="#">{{title}}</a>
         </h5>
         <hr />
         <div class="row no-gutters">
@@ -33,9 +33,20 @@
 
 <script>
 export default {
-    setup() {
-        //https://exactthemes.com/restrox/img/restaurant-thumbnail-1.jpg
-    },
+    props: {
+        imgSrc : {
+            type: String,
+            default: require('../../assets/fast-food.svg')
+        },
+        title: {
+            type: String,
+            required: true,
+        },
+        id: {
+            type: Number,
+            required: true
+        }
+    }
 }
 </script>
 

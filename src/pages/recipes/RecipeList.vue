@@ -6,7 +6,7 @@
       </div> -->
     </div>
     <div class="row">
-      <recipe-item></recipe-item>
+      <recipe-item title="Hey there" :id="1"></recipe-item>
     </div>
   </div>
 </template>
