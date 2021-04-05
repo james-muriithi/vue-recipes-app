@@ -6,7 +6,13 @@
       </div> -->
     </div>
     <div class="row">
-      <recipe-item title="Hey there" :id="1"></recipe-item>
+      <recipe-item
+        v-for="recipe in recipes"
+        :key="recipe.id"
+        :title="recipe.title"
+        :id="recipe.id"
+        :imgSrc="recipe.image"
+      ></recipe-item>
     </div>
   </div>
 </template>
@@ -18,6 +24,12 @@ export default {
   name: "App",
   components: {
     RecipeItem,
+  },
+  computed: {
+    recipes() {
+      console.log(this.$store.getters.recipes);
+      return this.$store.getters.recipes;
+    },
   },
 };
 </script>

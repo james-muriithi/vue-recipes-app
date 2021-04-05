@@ -16,12 +16,20 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+.padding-lr-20px {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .padding-tb-20px {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .margin-bottom-20px {
     margin-bottom: 20px;
+}
+
+.margin-bottom-40px {
+    margin-bottom: 40px;
 }
 
 .margin-top-10px {
