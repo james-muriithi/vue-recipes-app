@@ -1,5 +1,7 @@
 # vue-recipes-app
 
+<img src="./screenshot.png" alt="screenshot" />
+
 ## Project setup
 ```
 npm install
@@ -20,5 +22,7 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Recipe data
+> data is fetched from <a href="https://spoonacular.com/food-api/">spoonacular</a> api
+
+## Happy coding
