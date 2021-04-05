@@ -9,6 +9,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,vue}\""
   },
   "dependencies": {
+    "bootstrap": "^4.6.0",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vue-router": "^4.0.5",

@@ -1,15 +1,23 @@
 <template>
-  <img alt="Vue logo" src="../../assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <div class="title text-center">
+      <h2 class="font-weight-700 text-main-color">Latest Recipes</h2>
+      <div class="dropdown-divider mb-3">
+      </div>
+    </div>
+    <div class="row">
+      <recipe-item></recipe-item>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from '../../components/HelloWorld.vue'
+import RecipeItem from "../../components/recipes/RecipeItem.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    RecipeItem,
+  },
+};
 </script>
