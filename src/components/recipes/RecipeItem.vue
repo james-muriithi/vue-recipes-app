@@ -7,7 +7,7 @@
         <a href="#"
           ><img
             class="img-fluid w-100"
-            src="https://exactthemes.com/restrox/img/restaurant-thumbnail-1.jpg"
+            src="../../assets/fast-food.svg"
             alt=""
         /></a>
       </div>
@@ -31,6 +31,14 @@
   </div>
 </template>
 
+<script>
+export default {
+    setup() {
+        //https://exactthemes.com/restrox/img/restaurant-thumbnail-1.jpg
+    },
+}
+</script>
+
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
@@ -53,22 +61,34 @@ h5 {
   -moz-box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 6px 15px 0px rgb(0 0 0 / 10%);
 }
-.recipe-item{
-    transition: all ease 0.2s
+.recipe-item {
+  transition: all ease 0.2s;
 }
 
-.recipe-item:hover{
-    transform: translateY(-5px);
+.recipe-item:hover {
+  transform: translateY(-5px);
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.text-black{
-    color: #212121;
-    transition: all ease 0.3s;
+.text-black {
+  color: #212121;
+  transition: all ease 0.3s;
 }
-a.text-black:hover{
-    color: #FF4136;
+a.text-black:hover {
+  color: #ff4136;
+}
+
+@media screen and (max-width: 576px) {
+  .card-img-top img {
+    max-height: 270px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .card-img-top img {
+    max-height: 230px!important;
+  }
 }
 </style>
