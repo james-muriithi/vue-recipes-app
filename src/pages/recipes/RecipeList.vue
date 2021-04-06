@@ -5,7 +5,13 @@
       <!-- <div class="dropdown-divider mb-3">
       </div> -->
     </div>
-    <div class="row">
+    <div class="row" v-if="isLoading">
+      <recipe-item-shimmer
+        v-for="i in loadingDivs"
+        :key="i"
+      ></recipe-item-shimmer>
+    </div>
+    <div class="row" v-else>
       <recipe-item
         v-for="recipe in recipes"
         :key="recipe.id"
@@ -18,24 +24,38 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
 import RecipeItem from "../../components/recipes/RecipeItem.vue";
+import RecipeItemShimmer from "../../components/recipes/RecipeItemShimmer.vue";
 
 export default {
   name: "App",
   components: {
-    RecipeItem
+    RecipeItem,
+    RecipeItemShimmer,
+  },
+  data() {
+    return { isLoading: false, loadingDivs: new Array(15).fill(0) };
   },
   computed: {
     recipes() {
       return this.$store.getters.recipes;
-    }
+    },
   },
   methods: {
-    ...mapActions(["loadLatestRecipes"])
+    async loadLatestRecipes(options) {
+      this.isLoading = true;
+      try {
+        console.log(this.isLoading);
+        await this.$store.dispatch("loadLatestRecipes", options);
+      } catch (error) {
+        console.log(error);
+      }
+
+      this.isLoading = false;
+    },
   },
   created() {
     this.loadLatestRecipes({ forceReload: false });
-  }
+  },
 };
 </script>
