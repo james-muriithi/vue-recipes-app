@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import RecipeItem from "../../components/recipes/RecipeItem.vue";
 
 export default {
@@ -30,5 +31,11 @@ export default {
       return this.$store.getters.recipes;
     },
   },
+  methods: {
+    ...mapActions(['loadLatestRecipes'])
+  },
+  created(){
+    this.loadLatestRecipes({forceReload: false})
+  }
 };
 </script>
