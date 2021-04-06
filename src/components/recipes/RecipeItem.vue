@@ -3,7 +3,9 @@
     <div class="recipe-item margin-bottom-40px shadow-box mx-2">
       <div class="card border-0">
         <div class="card-img-top">
-          <a href="#"><img class="img-fluid w-100" :src="imgSrc" alt="" /></a>
+          <a href="#">
+            <img class="img-fluid w-100" v-lazy="lazyLoadOptions" />
+            </a>
         </div>
         <div class="padding-lr-20px padding-tb-20px">
           <h5 class="margin-bottom-20px margin-top-10px">
@@ -42,6 +44,15 @@ export default {
       required: true,
     },
   },
+  computed: {
+    lazyLoadOptions() {
+      return {
+        src: this.imgSrc,
+        loading: require("../../assets/fast-food.svg"),
+        error: require("../../assets/fast-food.svg"),
+      };
+    },
+  },
 };
 </script>
 
@@ -75,8 +86,8 @@ h5 {
   transform: translateY(-5px);
 }
 
-h5{
-    text-overflow: ellipsis;
+h5 {
+  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
