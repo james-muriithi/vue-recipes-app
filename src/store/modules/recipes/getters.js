@@ -1,5 +1,5 @@
 export default {
-    recipes(state){
-        return state.recipes
-    }
-}
+  recipes(state) {
+    return state.recipes;
+  }
+};

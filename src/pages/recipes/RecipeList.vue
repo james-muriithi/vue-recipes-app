@@ -18,24 +18,24 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions } from "vuex";
 import RecipeItem from "../../components/recipes/RecipeItem.vue";
 
 export default {
   name: "App",
   components: {
-    RecipeItem,
+    RecipeItem
   },
   computed: {
     recipes() {
       return this.$store.getters.recipes;
-    },
+    }
   },
   methods: {
-    ...mapActions(['loadLatestRecipes'])
+    ...mapActions(["loadLatestRecipes"])
   },
-  created(){
-    this.loadLatestRecipes({forceReload: false})
+  created() {
+    this.loadLatestRecipes({ forceReload: false });
   }
 };
 </script>

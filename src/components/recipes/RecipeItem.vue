@@ -5,7 +5,7 @@
         <div class="card-img-top">
           <a href="#">
             <img class="img-fluid w-100" v-lazy="lazyLoadOptions" />
-            </a>
+          </a>
         </div>
         <div class="padding-lr-20px padding-tb-20px">
           <h5 class="margin-bottom-20px margin-top-10px">
@@ -33,29 +33,28 @@ export default {
   props: {
     imgSrc: {
       type: String,
-      default: require("../../assets/fast-food.svg"),
+      default: require("../../assets/fast-food.svg")
     },
     title: {
       type: String,
-      required: true,
+      required: true
     },
     id: {
       type: Number,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
     lazyLoadOptions() {
       return {
         src: this.imgSrc,
         loading: require("../../assets/fast-food.svg"),
-        error: require("../../assets/fast-food.svg"),
+        error: require("../../assets/fast-food.svg")
       };
-    },
-  },
+    }
+  }
 };
 </script>
-
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");

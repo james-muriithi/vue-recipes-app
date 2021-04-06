@@ -1,11 +1,10 @@
 import {
   fetchRecipes,
   saveRecipes,
-  getLocalRecipes,
+  getLocalRecipes
 } from "../../../helpers/Recipes.js";
 export default {
   async loadLatestRecipes(context, payload) {
-
     if (!context.getters.recipes || context.getters.recipes.length == 0) {
       const recipes = JSON.parse(getLocalRecipes()) || [];
       context.commit("setRecipes", recipes);
@@ -20,5 +19,5 @@ export default {
     saveRecipes(JSON.stringify(recipes.recipes));
 
     context.commit("setRecipes", recipes.recipes);
-  },
+  }
 };

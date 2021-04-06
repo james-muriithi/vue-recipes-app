@@ -2,9 +2,9 @@ import { createStore } from "vuex";
 import recipesModule from "./modules/recipes";
 
 const store = createStore({
-    modules: {
-        recipes: recipesModule
-    }
+  modules: {
+    recipes: recipesModule
+  }
 });
 
 export default store;

@@ -13,30 +13,30 @@
   margin-top: 60px;
 }
 .padding-lr-30px {
-    padding-left: 30px;
-    padding-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .padding-lr-20px {
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .padding-tb-20px {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .margin-bottom-20px {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .margin-bottom-40px {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .margin-top-10px {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .text-red {
-    color: #E91E63;
+  color: #e91e63;
 }
 </style>

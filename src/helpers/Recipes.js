@@ -1,4 +1,4 @@
-function saveRecipes(recipes){
+function saveRecipes(recipes) {
   localStorage.setItem("recipes", recipes);
 }
 

@@ -35,8 +35,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 2.0, unitShort: "lb", unitLong: "pounds" },
-          metric: { amount: 907.185, unitShort: "g", unitLong: "grams" },
-        },
+          metric: { amount: 907.185, unitShort: "g", unitLong: "grams" }
+        }
       },
       {
         id: 1102047,
@@ -54,8 +54,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "serving", unitLong: "serving" },
-          metric: { amount: 1.0, unitShort: "serving", unitLong: "serving" },
-        },
+          metric: { amount: 1.0, unitShort: "serving", unitLong: "serving" }
+        }
       },
       {
         id: 4513,
@@ -73,8 +73,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 2.0, unitShort: "Tbsps", unitLong: "Tbsps" },
-          metric: { amount: 2.0, unitShort: "Tbsps", unitLong: "Tbsps" },
-        },
+          metric: { amount: 2.0, unitShort: "Tbsps", unitLong: "Tbsps" }
+        }
       },
       {
         id: 11282,
@@ -92,8 +92,8 @@ export default [
         metaInformation: ["sliced"],
         measures: {
           us: { amount: 2.0, unitShort: "inches", unitLong: "inches" },
-          metric: { amount: 2.0, unitShort: "inches", unitLong: "inches" },
-        },
+          metric: { amount: 2.0, unitShort: "inches", unitLong: "inches" }
+        }
       },
       {
         id: 11960,
@@ -111,8 +111,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 20.0, unitShort: "inches", unitLong: "inches" },
-          metric: { amount: 20.0, unitShort: "inches", unitLong: "inches" },
-        },
+          metric: { amount: 20.0, unitShort: "inches", unitLong: "inches" }
+        }
       },
       {
         id: 10111143,
@@ -130,8 +130,8 @@ export default [
         metaInformation: ["cut into one pieces"],
         measures: {
           us: { amount: 3.0, unitShort: "inches", unitLong: "inches" },
-          metric: { amount: 3.0, unitShort: "inches", unitLong: "inches" },
-        },
+          metric: { amount: 3.0, unitShort: "inches", unitLong: "inches" }
+        }
       },
       {
         id: 14003,
@@ -149,8 +149,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 8.0, unitShort: "oz", unitLong: "ounces" },
-          metric: { amount: 226.796, unitShort: "g", unitLong: "grams" },
-        },
+          metric: { amount: 226.796, unitShort: "g", unitLong: "grams" }
+        }
       },
       {
         id: 2049,
@@ -168,8 +168,8 @@ export default [
         metaInformation: ["fresh"],
         measures: {
           us: { amount: 2.0, unitShort: "sprigs", unitLong: "sprigs" },
-          metric: { amount: 2.0, unitShort: "sprigs", unitLong: "sprigs" },
-        },
+          metric: { amount: 2.0, unitShort: "sprigs", unitLong: "sprigs" }
+        }
       },
       {
         id: 6170,
@@ -187,8 +187,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "cup", unitLong: "cup" },
-          metric: { amount: 236.588, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 236.588, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 6971,
@@ -206,9 +206,9 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" },
-          metric: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" },
-        },
-      },
+          metric: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" }
+        }
+      }
     ],
     id: 639628,
     title: "Classic Pot Roast",
@@ -239,21 +239,21 @@ export default [
                 id: 404667,
                 name: "dutch oven",
                 localizedName: "dutch oven",
-                image: "dutch-oven.jpg",
+                image: "dutch-oven.jpg"
               },
               {
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
+                image: "pan.png"
               },
               {
                 id: 404784,
                 name: "oven",
                 localizedName: "oven",
-                image: "oven.jpg",
-              },
-            ],
+                image: "oven.jpg"
+              }
+            ]
           },
           {
             number: 2,
@@ -264,28 +264,28 @@ export default [
                 id: 1102047,
                 name: "salt and pepper",
                 localizedName: "salt and pepper",
-                image: "salt-and-pepper.jpg",
+                image: "salt-and-pepper.jpg"
               },
               {
                 id: 13786,
                 name: "beef chuck roast",
                 localizedName: "beef chuck roast",
-                image: "beef-chuck-roast.png",
+                image: "beef-chuck-roast.png"
               },
               {
                 id: 1014582,
                 name: "canola oil",
                 localizedName: "canola oil",
-                image: "vegetable-oil.jpg",
+                image: "vegetable-oil.jpg"
               },
               {
                 id: 1065062,
                 name: "meat",
                 localizedName: "meat",
-                image: "whole-chicken.jpg",
-              },
+                image: "whole-chicken.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 3,
@@ -296,17 +296,17 @@ export default [
                 id: 1065062,
                 name: "meat",
                 localizedName: "meat",
-                image: "whole-chicken.jpg",
-              },
+                image: "whole-chicken.jpg"
+              }
             ],
             equipment: [
               {
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
-              },
-            ],
+                image: "pan.png"
+              }
+            ]
           },
           {
             number: 4,
@@ -316,16 +316,16 @@ export default [
                 id: 11583,
                 name: "vegetable",
                 localizedName: "vegetable",
-                image: "mixed-vegetables.png",
+                image: "mixed-vegetables.png"
               },
               {
                 id: 1065062,
                 name: "meat",
                 localizedName: "meat",
-                image: "whole-chicken.jpg",
-              },
+                image: "whole-chicken.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 5,
@@ -335,10 +335,10 @@ export default [
                 id: 1102047,
                 name: "salt and pepper",
                 localizedName: "salt and pepper",
-                image: "salt-and-pepper.jpg",
-              },
+                image: "salt-and-pepper.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 6,
@@ -349,17 +349,17 @@ export default [
                 id: 14003,
                 name: "beer",
                 localizedName: "beer",
-                image: "beer.jpg",
-              },
+                image: "beer.jpg"
+              }
             ],
             equipment: [
               {
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
-              },
-            ],
+                image: "pan.png"
+              }
+            ]
           },
           {
             number: 7,
@@ -370,35 +370,35 @@ export default [
                 id: 6971,
                 name: "worcestershire sauce",
                 localizedName: "worcestershire sauce",
-                image: "dark-sauce.jpg",
+                image: "dark-sauce.jpg"
               },
               {
                 id: 1006615,
                 name: "stock",
                 localizedName: "stock",
-                image: "chicken-broth.png",
+                image: "chicken-broth.png"
               },
               {
                 id: 2049,
                 name: "thyme",
                 localizedName: "thyme",
-                image: "thyme.jpg",
+                image: "thyme.jpg"
               },
               {
                 id: 23572,
                 name: "beef",
                 localizedName: "beef",
-                image: "beef-cubes-raw.png",
-              },
+                image: "beef-cubes-raw.png"
+              }
             ],
             equipment: [
               {
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
-              },
-            ],
+                image: "pan.png"
+              }
+            ]
           },
           {
             number: 8,
@@ -409,24 +409,24 @@ export default [
                 id: 1065062,
                 name: "meat",
                 localizedName: "meat",
-                image: "whole-chicken.jpg",
-              },
+                image: "whole-chicken.jpg"
+              }
             ],
             equipment: [
               {
                 id: 404784,
                 name: "oven",
                 localizedName: "oven",
-                image: "oven.jpg",
+                image: "oven.jpg"
               },
               {
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
-              },
+                image: "pan.png"
+              }
             ],
-            length: { number: 480, unit: "minutes" },
+            length: { number: 480, unit: "minutes" }
           },
           {
             number: 9,
@@ -436,22 +436,22 @@ export default [
                 id: 10018029,
                 name: "crusty bread",
                 localizedName: "crusty bread",
-                image: "crusty-bread.jpg",
+                image: "crusty-bread.jpg"
               },
               {
                 id: 11352,
                 name: "potato",
                 localizedName: "potato",
-                image: "potatoes-yukon-gold.png",
-              },
+                image: "potatoes-yukon-gold.png"
+              }
             ],
-            equipment: [],
-          },
-        ],
-      },
+            equipment: []
+          }
+        ]
+      }
     ],
     originalId: null,
-    spoonacularSourceUrl: "https://spoonacular.com/classic-pot-roast-639628",
+    spoonacularSourceUrl: "https://spoonacular.com/classic-pot-roast-639628"
   },
   {
     vegetarian: false,
@@ -490,8 +490,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 0.5, unitShort: "Tbsps", unitLong: "Tbsps" },
-          metric: { amount: 0.5, unitShort: "Tbsps", unitLong: "Tbsps" },
-        },
+          metric: { amount: 0.5, unitShort: "Tbsps", unitLong: "Tbsps" }
+        }
       },
       {
         id: 1017,
@@ -509,8 +509,8 @@ export default [
         metaInformation: ["softened"],
         measures: {
           us: { amount: 8.0, unitShort: "oz", unitLong: "ounces" },
-          metric: { amount: 226.796, unitShort: "g", unitLong: "grams" },
-        },
+          metric: { amount: 226.796, unitShort: "g", unitLong: "grams" }
+        }
       },
       {
         id: 1123,
@@ -528,8 +528,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "", unitLong: "" },
-          metric: { amount: 1.0, unitShort: "", unitLong: "" },
-        },
+          metric: { amount: 1.0, unitShort: "", unitLong: "" }
+        }
       },
       {
         id: 1057,
@@ -547,8 +547,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 0.25, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 59.147, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 59.147, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 19335,
@@ -566,8 +566,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 0.25, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 59.147, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 59.147, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 2025,
@@ -585,8 +585,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 0.25, unitShort: "tsps", unitLong: "teaspoons" },
-          metric: { amount: 0.25, unitShort: "tsps", unitLong: "teaspoons" },
-        },
+          metric: { amount: 0.25, unitShort: "tsps", unitLong: "teaspoons" }
+        }
       },
       {
         id: 10018166,
@@ -604,8 +604,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 12.0, unitShort: "", unitLong: "" },
-          metric: { amount: 12.0, unitShort: "", unitLong: "" },
-        },
+          metric: { amount: 12.0, unitShort: "", unitLong: "" }
+        }
       },
       {
         id: 10019903,
@@ -623,8 +623,8 @@ export default [
         metaInformation: ["sweet"],
         measures: {
           us: { amount: 0.333, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 78.863, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 78.863, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 1145,
@@ -642,9 +642,9 @@ export default [
         metaInformation: ["unsalted"],
         measures: {
           us: { amount: 4.0, unitShort: "Tbsps", unitLong: "Tbsps" },
-          metric: { amount: 4.0, unitShort: "Tbsps", unitLong: "Tbsps" },
-        },
-      },
+          metric: { amount: 4.0, unitShort: "Tbsps", unitLong: "Tbsps" }
+        }
+      }
     ],
     id: 1045245,
     title: "How to make the perfect Chocolate Chip Eggnog Bars",
@@ -675,21 +675,21 @@ export default [
                 id: 404765,
                 name: "aluminum foil",
                 localizedName: "aluminum foil",
-                image: "aluminum-foil.png",
+                image: "aluminum-foil.png"
               },
               {
                 id: 404784,
                 name: "oven",
                 localizedName: "oven",
-                image: "oven.jpg",
+                image: "oven.jpg"
               },
               {
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
-              },
-            ],
+                image: "pan.png"
+              }
+            ]
           },
           {
             number: 2,
@@ -699,17 +699,17 @@ export default [
                 id: 10018166,
                 name: "oreo cookies",
                 localizedName: "oreo cookies",
-                image: "oreos.png",
-              },
+                image: "oreos.png"
+              }
             ],
             equipment: [
               {
                 id: 404771,
                 name: "food processor",
                 localizedName: "food processor",
-                image: "food-processor.png",
-              },
-            ],
+                image: "food-processor.png"
+              }
+            ]
           },
           {
             number: 3,
@@ -719,26 +719,26 @@ export default [
                 id: 1001,
                 name: "butter",
                 localizedName: "butter",
-                image: "butter-sliced.jpg",
-              },
+                image: "butter-sliced.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 4,
             step:
               "Spread the mixture onto the bottom of your prepared pan and set aside.",
             ingredients: [
-              { id: 0, name: "spread", localizedName: "spread", image: "" },
+              { id: 0, name: "spread", localizedName: "spread", image: "" }
             ],
             equipment: [
               {
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
-              },
-            ],
+                image: "pan.png"
+              }
+            ]
           },
           {
             number: 5,
@@ -749,23 +749,23 @@ export default [
                 id: 1017,
                 name: "cream cheese",
                 localizedName: "cream cheese",
-                image: "cream-cheese.jpg",
+                image: "cream-cheese.jpg"
               },
               {
                 id: 19335,
                 name: "sugar",
                 localizedName: "sugar",
-                image: "sugar-in-bowl.png",
-              },
+                image: "sugar-in-bowl.png"
+              }
             ],
             equipment: [
               {
                 id: 404771,
                 name: "food processor",
                 localizedName: "food processor",
-                image: "food-processor.png",
-              },
-            ],
+                image: "food-processor.png"
+              }
+            ]
           },
           {
             number: 6,
@@ -776,31 +776,31 @@ export default [
                 id: 99278,
                 name: "chocolate chips",
                 localizedName: "chocolate chips",
-                image: "chocolate-chips.jpg",
+                image: "chocolate-chips.jpg"
               },
               {
                 id: 1057,
                 name: "eggnog",
                 localizedName: "eggnog",
-                image: "eggnog.png",
+                image: "eggnog.png"
               },
               { id: 0, name: "crust", localizedName: "crust", image: "" },
               {
                 id: 20081,
                 name: "all purpose flour",
                 localizedName: "all purpose flour",
-                image: "flour.png",
+                image: "flour.png"
               },
-              { id: 1123, name: "egg", localizedName: "egg", image: "egg.png" },
+              { id: 1123, name: "egg", localizedName: "egg", image: "egg.png" }
             ],
             equipment: [
               {
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
-              },
-            ],
+                image: "pan.png"
+              }
+            ]
           },
           {
             number: 7,
@@ -812,10 +812,10 @@ export default [
                 id: 404784,
                 name: "oven",
                 localizedName: "oven",
-                image: "oven.jpg",
-              },
+                image: "oven.jpg"
+              }
             ],
-            length: { number: 40, unit: "minutes" },
+            length: { number: 40, unit: "minutes" }
           },
           {
             number: 8,
@@ -826,30 +826,30 @@ export default [
                 id: 2025,
                 name: "nutmeg",
                 localizedName: "nutmeg",
-                image: "ground-nutmeg.jpg",
-              },
+                image: "ground-nutmeg.jpg"
+              }
             ],
             equipment: [
               {
                 id: 404765,
                 name: "aluminum foil",
                 localizedName: "aluminum foil",
-                image: "aluminum-foil.png",
+                image: "aluminum-foil.png"
               },
               {
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
-              },
-            ],
-          },
-        ],
-      },
+                image: "pan.png"
+              }
+            ]
+          }
+        ]
+      }
     ],
     originalId: null,
     spoonacularSourceUrl:
-      "https://spoonacular.com/how-to-make-the-perfect-chocolate-chip-eggnog-bars-1045245",
+      "https://spoonacular.com/how-to-make-the-perfect-chocolate-chip-eggnog-bars-1045245"
   },
   {
     vegetarian: true,
@@ -887,8 +887,8 @@ export default [
         metaInformation: ["pitted", "quartered"],
         measures: {
           us: { amount: 4.0, unitShort: "", unitLong: "" },
-          metric: { amount: 4.0, unitShort: "", unitLong: "" },
-        },
+          metric: { amount: 4.0, unitShort: "", unitLong: "" }
+        }
       },
       {
         id: 2064,
@@ -906,8 +906,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 6.0, unitShort: "", unitLong: "" },
-          metric: { amount: 6.0, unitShort: "", unitLong: "" },
-        },
+          metric: { amount: 6.0, unitShort: "", unitLong: "" }
+        }
       },
       {
         id: 9159,
@@ -925,8 +925,8 @@ export default [
         metaInformation: ["cut into wedges"],
         measures: {
           us: { amount: 0.25, unitShort: "", unitLong: "" },
-          metric: { amount: 0.25, unitShort: "", unitLong: "" },
-        },
+          metric: { amount: 0.25, unitShort: "", unitLong: "" }
+        }
       },
       {
         id: 10019908,
@@ -944,8 +944,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.5, unitShort: "tsps", unitLong: "teaspoons" },
-          metric: { amount: 1.5, unitShort: "tsps", unitLong: "teaspoons" },
-        },
+          metric: { amount: 1.5, unitShort: "tsps", unitLong: "teaspoons" }
+        }
       },
       {
         id: 14037,
@@ -963,8 +963,8 @@ export default [
         metaInformation: ["white"],
         measures: {
           us: { amount: 2.0, unitShort: "oz", unitLong: "ounces" },
-          metric: { amount: 56.699, unitShort: "g", unitLong: "grams" },
-        },
+          metric: { amount: 56.699, unitShort: "g", unitLong: "grams" }
+        }
       },
       {
         id: 14121,
@@ -984,9 +984,9 @@ export default [
         metaInformation: ["flavored", "(I used Lime San Pellegrino)"],
         measures: {
           us: { amount: 1.0, unitShort: "cup", unitLong: "cup" },
-          metric: { amount: 236.588, unitShort: "ml", unitLong: "milliliters" },
-        },
-      },
+          metric: { amount: 236.588, unitShort: "ml", unitLong: "milliliters" }
+        }
+      }
     ],
     id: 637766,
     title: "Cherry Lime Mojito",
@@ -1015,34 +1015,34 @@ export default [
                 id: 9070,
                 name: "cherries",
                 localizedName: "cherries",
-                image: "cherries.jpg",
+                image: "cherries.jpg"
               },
               {
                 id: 19335,
                 name: "sugar",
                 localizedName: "sugar",
-                image: "sugar-in-bowl.png",
+                image: "sugar-in-bowl.png"
               },
               {
                 id: 9159,
                 name: "lime",
                 localizedName: "lime",
-                image: "lime.jpg",
+                image: "lime.jpg"
               },
               {
                 id: 2064,
                 name: "mint",
                 localizedName: "mint",
-                image: "mint.jpg",
-              },
+                image: "mint.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 2,
             step: "Muddle ingredients together at the bottom of the glass.",
             ingredients: [],
-            equipment: [],
+            equipment: []
           },
           {
             number: 3,
@@ -1052,16 +1052,16 @@ export default [
                 id: 10014412,
                 name: "ice cubes",
                 localizedName: "ice cubes",
-                image: "ice-cubes.png",
+                image: "ice-cubes.png"
               },
               {
                 id: 11114037,
                 name: "rum",
                 localizedName: "rum",
-                image: "rum-dark.jpg",
-              },
+                image: "rum-dark.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 4,
@@ -1072,16 +1072,16 @@ export default [
                 id: 14121,
                 name: "sparkling water",
                 localizedName: "sparkling water",
-                image: "sparkling-water.png",
-              },
+                image: "sparkling-water.png"
+              }
             ],
-            equipment: [],
-          },
-        ],
-      },
+            equipment: []
+          }
+        ]
+      }
     ],
     originalId: null,
-    spoonacularSourceUrl: "https://spoonacular.com/cherry-lime-mojito-637766",
+    spoonacularSourceUrl: "https://spoonacular.com/cherry-lime-mojito-637766"
   },
   {
     vegetarian: true,
@@ -1119,8 +1119,8 @@ export default [
         metaInformation: ["dried", "rinsed"],
         measures: {
           us: { amount: 6.0, unitShort: "large", unitLong: "larges" },
-          metric: { amount: 6.0, unitShort: "large", unitLong: "larges" },
-        },
+          metric: { amount: 6.0, unitShort: "large", unitLong: "larges" }
+        }
       },
       {
         id: 9200,
@@ -1141,9 +1141,9 @@ export default [
           metric: {
             amount: 1.0,
             unitShort: "small head",
-            unitLong: "small head",
-          },
-        },
+            unitLong: "small head"
+          }
+        }
       },
       {
         id: 4053,
@@ -1161,8 +1161,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.5, unitShort: "Tbs", unitLong: "Tbs" },
-          metric: { amount: 1.5, unitShort: "Tbs", unitLong: "Tbs" },
-        },
+          metric: { amount: 1.5, unitShort: "Tbs", unitLong: "Tbs" }
+        }
       },
       {
         id: 11215,
@@ -1180,8 +1180,8 @@ export default [
         metaInformation: ["minced", "pressed"],
         measures: {
           us: { amount: 3.0, unitShort: "cloves", unitLong: "cloves" },
-          metric: { amount: 3.0, unitShort: "cloves", unitLong: "cloves" },
-        },
+          metric: { amount: 3.0, unitShort: "cloves", unitLong: "cloves" }
+        }
       },
       {
         id: 2047,
@@ -1199,8 +1199,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "pinch", unitLong: "pinch" },
-          metric: { amount: 1.0, unitShort: "pinch", unitLong: "pinch" },
-        },
+          metric: { amount: 1.0, unitShort: "pinch", unitLong: "pinch" }
+        }
       },
       {
         id: 2044,
@@ -1218,8 +1218,8 @@ export default [
         metaInformation: ["fresh", "finely chopped"],
         measures: {
           us: { amount: 1.0, unitShort: "sprig", unitLong: "sprig" },
-          metric: { amount: 1.0, unitShort: "sprig", unitLong: "sprig" },
-        },
+          metric: { amount: 1.0, unitShort: "sprig", unitLong: "sprig" }
+        }
       },
       {
         id: 11477,
@@ -1237,8 +1237,8 @@ export default [
         metaInformation: ["(courgette)"],
         measures: {
           us: { amount: 1.0, unitShort: "medium", unitLong: "medium" },
-          metric: { amount: 1.0, unitShort: "medium", unitLong: "medium" },
-        },
+          metric: { amount: 1.0, unitShort: "medium", unitLong: "medium" }
+        }
       },
       {
         id: 11821,
@@ -1256,8 +1256,8 @@ export default [
         metaInformation: ["red", "thinly sliced"],
         measures: {
           us: { amount: 1.0, unitShort: "large", unitLong: "large" },
-          metric: { amount: 1.0, unitShort: "large", unitLong: "large" },
-        },
+          metric: { amount: 1.0, unitShort: "large", unitLong: "large" }
+        }
       },
       {
         id: 9037,
@@ -1275,8 +1275,8 @@ export default [
         metaInformation: ["sliced"],
         measures: {
           us: { amount: 1.0, unitShort: "medium", unitLong: "medium" },
-          metric: { amount: 1.0, unitShort: "medium", unitLong: "medium" },
-        },
+          metric: { amount: 1.0, unitShort: "medium", unitLong: "medium" }
+        }
       },
       {
         id: 16091,
@@ -1297,9 +1297,9 @@ export default [
         metaInformation: ["asian style", "your favorite", "(or sauce)"],
         measures: {
           us: { amount: 3.0, unitShort: "Tbs", unitLong: "Tbs" },
-          metric: { amount: 3.0, unitShort: "Tbs", unitLong: "Tbs" },
-        },
-      },
+          metric: { amount: 3.0, unitShort: "Tbs", unitLong: "Tbs" }
+        }
+      }
     ],
     id: 662670,
     title: "Swiss Chard Wraps",
@@ -1329,16 +1329,16 @@ export default [
                 id: 11147,
                 name: "swiss chard",
                 localizedName: "swiss chard",
-                image: "swiss-chard.jpg",
+                image: "swiss-chard.jpg"
               },
               {
                 id: 10018364,
                 name: "wrap",
                 localizedName: "wrap",
-                image: "flour-tortilla.jpg",
-              },
+                image: "flour-tortilla.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 2,
@@ -1349,29 +1349,29 @@ export default [
                 id: 10011135,
                 name: "cauliflower florets",
                 localizedName: "cauliflower florets",
-                image: "cauliflower.jpg",
+                image: "cauliflower.jpg"
               },
               {
                 id: 11135,
                 name: "cauliflower",
                 localizedName: "cauliflower",
-                image: "cauliflower.jpg",
+                image: "cauliflower.jpg"
               },
               {
                 id: 20444,
                 name: "rice",
                 localizedName: "rice",
-                image: "uncooked-white-rice.png",
-              },
+                image: "uncooked-white-rice.png"
+              }
             ],
             equipment: [
               {
                 id: 404771,
                 name: "food processor",
                 localizedName: "food processor",
-                image: "food-processor.png",
-              },
-            ],
+                image: "food-processor.png"
+              }
+            ]
           },
           {
             number: 3,
@@ -1382,23 +1382,23 @@ export default [
                 id: 4053,
                 name: "olive oil",
                 localizedName: "olive oil",
-                image: "olive-oil.jpg",
+                image: "olive-oil.jpg"
               },
               {
                 id: 11215,
                 name: "garlic",
                 localizedName: "garlic",
-                image: "garlic.png",
-              },
+                image: "garlic.png"
+              }
             ],
             equipment: [
               {
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
-              },
-            ],
+                image: "pan.png"
+              }
+            ]
           },
           {
             number: 4,
@@ -1409,23 +1409,23 @@ export default [
                 id: 10111135,
                 name: "cauliflower rice",
                 localizedName: "cauliflower rice",
-                image: "cauliflower.jpg",
+                image: "cauliflower.jpg"
               },
               {
                 id: 11135,
                 name: "cauliflower",
                 localizedName: "cauliflower",
-                image: "cauliflower.jpg",
+                image: "cauliflower.jpg"
               },
               {
                 id: 9200,
                 name: "orange",
                 localizedName: "orange",
-                image: "orange.png",
-              },
+                image: "orange.png"
+              }
             ],
             equipment: [],
-            length: { number: 3, unit: "minutes" },
+            length: { number: 3, unit: "minutes" }
           },
           {
             number: 5,
@@ -1436,22 +1436,22 @@ export default [
                 id: 11135,
                 name: "cauliflower",
                 localizedName: "cauliflower",
-                image: "cauliflower.jpg",
+                image: "cauliflower.jpg"
               },
               {
                 id: 2044,
                 name: "basil",
                 localizedName: "basil",
-                image: "basil.jpg",
+                image: "basil.jpg"
               },
               {
                 id: 2047,
                 name: "salt",
                 localizedName: "salt",
-                image: "salt.jpg",
-              },
+                image: "salt.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 6,
@@ -1462,29 +1462,29 @@ export default [
                 id: 10111477,
                 name: "zucchini noodles",
                 localizedName: "zucchini noodles",
-                image: "zoodles.jpg",
+                image: "zoodles.jpg"
               },
               {
                 id: 11583,
                 name: "vegetable",
                 localizedName: "vegetable",
-                image: "mixed-vegetables.png",
+                image: "mixed-vegetables.png"
               },
               {
                 id: 11477,
                 name: "zucchini",
                 localizedName: "zucchini",
-                image: "zucchini.jpg",
-              },
+                image: "zucchini.jpg"
+              }
             ],
             equipment: [
               {
                 id: 404693,
                 name: "peeler",
                 localizedName: "peeler",
-                image: "peeler.png",
-              },
-            ],
+                image: "peeler.png"
+              }
+            ]
           },
           {
             number: 7,
@@ -1494,10 +1494,10 @@ export default [
                 id: 10018364,
                 name: "wrap",
                 localizedName: "wrap",
-                image: "flour-tortilla.jpg",
-              },
+                image: "flour-tortilla.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 8,
@@ -1508,34 +1508,34 @@ export default [
                 id: 10111477,
                 name: "zucchini noodles",
                 localizedName: "zucchini noodles",
-                image: "zoodles.jpg",
+                image: "zoodles.jpg"
               },
               {
                 id: 11135,
                 name: "cauliflower",
                 localizedName: "cauliflower",
-                image: "cauliflower.jpg",
+                image: "cauliflower.jpg"
               },
               {
                 id: 11147,
                 name: "swiss chard",
                 localizedName: "swiss chard",
-                image: "swiss-chard.jpg",
+                image: "swiss-chard.jpg"
               },
               {
                 id: 11821,
                 name: "red pepper",
                 localizedName: "red pepper",
-                image: "red-pepper.jpg",
+                image: "red-pepper.jpg"
               },
               {
                 id: 9037,
                 name: "avocado",
                 localizedName: "avocado",
-                image: "avocado.jpg",
-              },
+                image: "avocado.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 9,
@@ -1546,22 +1546,22 @@ export default [
                 id: 4135,
                 name: "vinaigrette",
                 localizedName: "vinaigrette",
-                image: "vinaigrette.jpg",
+                image: "vinaigrette.jpg"
               },
               {
                 id: 11583,
                 name: "vegetable",
                 localizedName: "vegetable",
-                image: "mixed-vegetables.png",
+                image: "mixed-vegetables.png"
               },
               {
                 id: 10018364,
                 name: "wrap",
                 localizedName: "wrap",
-                image: "flour-tortilla.jpg",
-              },
+                image: "flour-tortilla.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 10,
@@ -1573,11 +1573,11 @@ export default [
                 id: 10018364,
                 name: "wrap",
                 localizedName: "wrap",
-                image: "flour-tortilla.jpg",
+                image: "flour-tortilla.jpg"
               },
-              { id: 0, name: "dip", localizedName: "dip", image: "" },
+              { id: 0, name: "dip", localizedName: "dip", image: "" }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 11,
@@ -1588,16 +1588,16 @@ export default [
                 id: 10018364,
                 name: "wrap",
                 localizedName: "wrap",
-                image: "flour-tortilla.jpg",
-              },
+                image: "flour-tortilla.jpg"
+              }
             ],
-            equipment: [],
-          },
-        ],
-      },
+            equipment: []
+          }
+        ]
+      }
     ],
     originalId: null,
-    spoonacularSourceUrl: "https://spoonacular.com/swiss-chard-wraps-662670",
+    spoonacularSourceUrl: "https://spoonacular.com/swiss-chard-wraps-662670"
   },
   {
     vegetarian: false,
@@ -1636,8 +1636,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 4.0, unitShort: "Tbsps", unitLong: "Tbsps" },
-          metric: { amount: 4.0, unitShort: "Tbsps", unitLong: "Tbsps" },
-        },
+          metric: { amount: 4.0, unitShort: "Tbsps", unitLong: "Tbsps" }
+        }
       },
       {
         id: 18009,
@@ -1655,8 +1655,8 @@ export default [
         metaInformation: ["pillsbury®", "( I used Grands)"],
         measures: {
           us: { amount: 1.0, unitShort: "can", unitLong: "can" },
-          metric: { amount: 1.0, unitShort: "can", unitLong: "can" },
-        },
+          metric: { amount: 1.0, unitShort: "can", unitLong: "can" }
+        }
       },
       {
         id: 6016,
@@ -1674,8 +1674,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 2.0, unitShort: "cans", unitLong: "cans" },
-          metric: { amount: 2.0, unitShort: "cans", unitLong: "cans" },
-        },
+          metric: { amount: 2.0, unitShort: "cans", unitLong: "cans" }
+        }
       },
       {
         id: 20081,
@@ -1693,8 +1693,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" },
-          metric: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" },
-        },
+          metric: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" }
+        }
       },
       {
         id: 11282,
@@ -1712,8 +1712,8 @@ export default [
         metaInformation: ["finely chopped"],
         measures: {
           us: { amount: 1.0, unitShort: "", unitLong: "" },
-          metric: { amount: 1.0, unitShort: "", unitLong: "" },
-        },
+          metric: { amount: 1.0, unitShort: "", unitLong: "" }
+        }
       },
       {
         id: 11297,
@@ -1731,8 +1731,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" },
-          metric: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" },
-        },
+          metric: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" }
+        }
       },
       {
         id: 1002030,
@@ -1750,8 +1750,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" },
-          metric: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" },
-        },
+          metric: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" }
+        }
       },
       {
         id: 2034,
@@ -1769,8 +1769,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 2.0, unitShort: "tsps", unitLong: "teaspoons" },
-          metric: { amount: 2.0, unitShort: "tsps", unitLong: "teaspoons" },
-        },
+          metric: { amount: 2.0, unitShort: "tsps", unitLong: "teaspoons" }
+        }
       },
       {
         id: 1055062,
@@ -1788,8 +1788,8 @@ export default [
         metaInformation: ["boneless", "skinless"],
         measures: {
           us: { amount: 3.0, unitShort: "", unitLong: "" },
-          metric: { amount: 3.0, unitShort: "", unitLong: "" },
-        },
+          metric: { amount: 3.0, unitShort: "", unitLong: "" }
+        }
       },
       {
         id: 14412,
@@ -1807,9 +1807,9 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 2.0, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 473.176, unitShort: "ml", unitLong: "milliliters" },
-        },
-      },
+          metric: { amount: 473.176, unitShort: "ml", unitLong: "milliliters" }
+        }
+      }
     ],
     id: 715383,
     title: "Slow Cooker Chicken and Dumplings",
@@ -1839,9 +1839,9 @@ export default [
                 id: 404718,
                 name: "slow cooker",
                 localizedName: "slow cooker",
-                image: "slow-cooker.jpg",
-              },
-            ],
+                image: "slow-cooker.jpg"
+              }
+            ]
           },
           {
             number: 2,
@@ -1852,80 +1852,80 @@ export default [
                 id: 2034,
                 name: "poultry seasoning",
                 localizedName: "poultry seasoning",
-                image: "seasoning.jpg",
+                image: "seasoning.jpg"
               },
               {
                 id: 5062,
                 name: "chicken breast",
                 localizedName: "chicken breast",
-                image: "chicken-breasts.png",
+                image: "chicken-breasts.png"
               },
               {
                 id: 18009,
                 name: "biscuits",
                 localizedName: "biscuits",
-                image: "buttermilk-biscuits.jpg",
+                image: "buttermilk-biscuits.jpg"
               },
               {
                 id: 5006,
                 name: "whole chicken",
                 localizedName: "whole chicken",
-                image: "whole-chicken.jpg",
+                image: "whole-chicken.jpg"
               },
               {
                 id: 11297,
                 name: "parsley",
                 localizedName: "parsley",
-                image: "parsley.jpg",
+                image: "parsley.jpg"
               },
               {
                 id: 1001,
                 name: "butter",
                 localizedName: "butter",
-                image: "butter-sliced.jpg",
+                image: "butter-sliced.jpg"
               },
               {
                 id: 1002030,
                 name: "pepper",
                 localizedName: "pepper",
-                image: "pepper.jpg",
+                image: "pepper.jpg"
               },
               {
                 id: 20081,
                 name: "all purpose flour",
                 localizedName: "all purpose flour",
-                image: "flour.png",
+                image: "flour.png"
               },
               {
                 id: 11282,
                 name: "onion",
                 localizedName: "onion",
-                image: "brown-onion.png",
+                image: "brown-onion.png"
               },
               {
                 id: 14412,
                 name: "water",
                 localizedName: "water",
-                image: "water.png",
+                image: "water.png"
               },
-              { id: 0, name: "soup", localizedName: "soup", image: "" },
+              { id: 0, name: "soup", localizedName: "soup", image: "" }
             ],
             equipment: [
               {
                 id: 404718,
                 name: "slow cooker",
                 localizedName: "slow cooker",
-                image: "slow-cooker.jpg",
-              },
+                image: "slow-cooker.jpg"
+              }
             ],
-            length: { number: 360, unit: "minutes" },
-          },
-        ],
-      },
+            length: { number: 360, unit: "minutes" }
+          }
+        ]
+      }
     ],
     originalId: null,
     spoonacularSourceUrl:
-      "https://spoonacular.com/slow-cooker-chicken-and-dumplings-715383",
+      "https://spoonacular.com/slow-cooker-chicken-and-dumplings-715383"
   },
   {
     vegetarian: false,
@@ -1963,8 +1963,8 @@ export default [
         metaInformation: ["fresh", "sliced"],
         measures: {
           us: { amount: 7.055, unitShort: "oz", unitLong: "ounces" },
-          metric: { amount: 200.0, unitShort: "g", unitLong: "grams" },
-        },
+          metric: { amount: 200.0, unitShort: "g", unitLong: "grams" }
+        }
       },
       {
         id: 11260,
@@ -1982,8 +1982,8 @@ export default [
         metaInformation: ["white", "sliced"],
         measures: {
           us: { amount: 3.527, unitShort: "oz", unitLong: "ounces" },
-          metric: { amount: 100.0, unitShort: "g", unitLong: "grams" },
-        },
+          metric: { amount: 100.0, unitShort: "g", unitLong: "grams" }
+        }
       },
       {
         id: 11215,
@@ -2001,8 +2001,8 @@ export default [
         metaInformation: ["sliced"],
         measures: {
           us: { amount: 1.0, unitShort: "head", unitLong: "head" },
-          metric: { amount: 1.0, unitShort: "head", unitLong: "head" },
-        },
+          metric: { amount: 1.0, unitShort: "head", unitLong: "head" }
+        }
       },
       {
         id: 1001,
@@ -2020,8 +2020,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 3.0, unitShort: "Tbsps", unitLong: "Tbsps" },
-          metric: { amount: 3.0, unitShort: "Tbsps", unitLong: "Tbsps" },
-        },
+          metric: { amount: 3.0, unitShort: "Tbsps", unitLong: "Tbsps" }
+        }
       },
       {
         id: 14106,
@@ -2039,8 +2039,8 @@ export default [
         metaInformation: ["white"],
         measures: {
           us: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" },
-          metric: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" },
-        },
+          metric: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" }
+        }
       },
       {
         id: 6112,
@@ -2058,8 +2058,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" },
-          metric: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" },
-        },
+          metric: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" }
+        }
       },
       {
         id: 2069,
@@ -2077,8 +2077,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" },
-          metric: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" },
-        },
+          metric: { amount: 1.0, unitShort: "Tbsp", unitLong: "Tbsp" }
+        }
       },
       {
         id: 1002030,
@@ -2096,8 +2096,8 @@ export default [
         metaInformation: ["black"],
         measures: {
           us: { amount: 0.5, unitShort: "tsps", unitLong: "teaspoons" },
-          metric: { amount: 0.5, unitShort: "tsps", unitLong: "teaspoons" },
-        },
+          metric: { amount: 0.5, unitShort: "tsps", unitLong: "teaspoons" }
+        }
       },
       {
         id: 2047,
@@ -2115,8 +2115,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 0.5, unitShort: "tsps", unitLong: "teaspoons" },
-          metric: { amount: 0.5, unitShort: "tsps", unitLong: "teaspoons" },
-        },
+          metric: { amount: 0.5, unitShort: "tsps", unitLong: "teaspoons" }
+        }
       },
       {
         id: 4582,
@@ -2134,8 +2134,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 0.25, unitShort: "tsps", unitLong: "teaspoons" },
-          metric: { amount: 0.25, unitShort: "tsps", unitLong: "teaspoons" },
-        },
+          metric: { amount: 0.25, unitShort: "tsps", unitLong: "teaspoons" }
+        }
       },
       {
         id: 11297,
@@ -2153,8 +2153,8 @@ export default [
         metaInformation: ["chopped"],
         measures: {
           us: { amount: 0.25, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 59.147, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 59.147, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 11291,
@@ -2172,9 +2172,9 @@ export default [
         metaInformation: ["diced"],
         measures: {
           us: { amount: 0.25, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 59.147, unitShort: "ml", unitLong: "milliliters" },
-        },
-      },
+          metric: { amount: 59.147, unitShort: "ml", unitLong: "milliliters" }
+        }
+      }
     ],
     id: 661669,
     title: "Stir Fry Mushrooms In Butter, Garlic And White Wine",
@@ -2193,7 +2193,7 @@ export default [
       "snack",
       "appetizer",
       "antipasto",
-      "hor d'oeuvre",
+      "hor d'oeuvre"
     ],
     diets: ["gluten free"],
     occasions: [],
@@ -2212,23 +2212,23 @@ export default [
                 id: 1001,
                 name: "butter",
                 localizedName: "butter",
-                image: "butter-sliced.jpg",
+                image: "butter-sliced.jpg"
               },
               {
                 id: 11215,
                 name: "garlic",
                 localizedName: "garlic",
-                image: "garlic.png",
-              },
+                image: "garlic.png"
+              }
             ],
             equipment: [
               {
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
-              },
-            ],
+                image: "pan.png"
+              }
+            ]
           },
           {
             number: 2,
@@ -2238,11 +2238,11 @@ export default [
                 id: 11260,
                 name: "mushrooms",
                 localizedName: "mushrooms",
-                image: "mushrooms.png",
-              },
+                image: "mushrooms.png"
+              }
             ],
             equipment: [],
-            length: { number: 2, unit: "minutes" },
+            length: { number: 2, unit: "minutes" }
           },
           {
             number: 3,
@@ -2253,60 +2253,60 @@ export default [
                 id: 2069,
                 name: "balsamic vinegar",
                 localizedName: "balsamic vinegar",
-                image: "balsamic-vinegar.jpg",
+                image: "balsamic-vinegar.jpg"
               },
               {
                 id: 6112,
                 name: "teriyaki sauce",
                 localizedName: "teriyaki sauce",
-                image: "dark-sauce.jpg",
+                image: "dark-sauce.jpg"
               },
               {
                 id: 11291,
                 name: "spring onions",
                 localizedName: "spring onions",
-                image: "spring-onions.jpg",
+                image: "spring-onions.jpg"
               },
               {
                 id: 1002030,
                 name: "black pepper",
                 localizedName: "black pepper",
-                image: "pepper.jpg",
+                image: "pepper.jpg"
               },
               {
                 id: 14106,
                 name: "white wine",
                 localizedName: "white wine",
-                image: "white-wine.jpg",
+                image: "white-wine.jpg"
               },
               {
                 id: 11297,
                 name: "parsley",
                 localizedName: "parsley",
-                image: "parsley.jpg",
+                image: "parsley.jpg"
               },
               {
                 id: 2047,
                 name: "salt",
                 localizedName: "salt",
-                image: "salt.jpg",
+                image: "salt.jpg"
               },
               {
                 id: 4582,
                 name: "cooking oil",
                 localizedName: "cooking oil",
-                image: "vegetable-oil.jpg",
-              },
+                image: "vegetable-oil.jpg"
+              }
             ],
             equipment: [],
-            length: { number: 1, unit: "minutes" },
-          },
-        ],
-      },
+            length: { number: 1, unit: "minutes" }
+          }
+        ]
+      }
     ],
     originalId: null,
     spoonacularSourceUrl:
-      "https://spoonacular.com/stir-fry-mushrooms-in-butter-garlic-and-white-wine-661669",
+      "https://spoonacular.com/stir-fry-mushrooms-in-butter-garlic-and-white-wine-661669"
   },
   {
     vegetarian: true,
@@ -2344,8 +2344,8 @@ export default [
         metaInformation: ["red"],
         measures: {
           us: { amount: 1.0, unitShort: "", unitLong: "" },
-          metric: { amount: 1.0, unitShort: "", unitLong: "" },
-        },
+          metric: { amount: 1.0, unitShort: "", unitLong: "" }
+        }
       },
       {
         id: 11529,
@@ -2363,8 +2363,8 @@ export default [
         metaInformation: ["ripe"],
         measures: {
           us: { amount: 1.0, unitShort: "", unitLong: "" },
-          metric: { amount: 1.0, unitShort: "", unitLong: "" },
-        },
+          metric: { amount: 1.0, unitShort: "", unitLong: "" }
+        }
       },
       {
         id: 10011282,
@@ -2382,8 +2382,8 @@ export default [
         metaInformation: ["red", "peeled", "thinly sliced"],
         measures: {
           us: { amount: 1.0, unitShort: "serving", unitLong: "serving" },
-          metric: { amount: 1.0, unitShort: "serving", unitLong: "serving" },
-        },
+          metric: { amount: 1.0, unitShort: "serving", unitLong: "serving" }
+        }
       },
       {
         id: 2054,
@@ -2401,8 +2401,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "serving", unitLong: "serving" },
-          metric: { amount: 1.0, unitShort: "serving", unitLong: "serving" },
-        },
+          metric: { amount: 1.0, unitShort: "serving", unitLong: "serving" }
+        }
       },
       {
         id: 4053,
@@ -2420,8 +2420,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "serving", unitLong: "serving" },
-          metric: { amount: 1.0, unitShort: "serving", unitLong: "serving" },
-        },
+          metric: { amount: 1.0, unitShort: "serving", unitLong: "serving" }
+        }
       },
       {
         id: 1002047,
@@ -2439,8 +2439,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "serving", unitLong: "serving" },
-          metric: { amount: 1.0, unitShort: "serving", unitLong: "serving" },
-        },
+          metric: { amount: 1.0, unitShort: "serving", unitLong: "serving" }
+        }
       },
       {
         id: 1002030,
@@ -2458,8 +2458,8 @@ export default [
         metaInformation: ["black"],
         measures: {
           us: { amount: 1.0, unitShort: "serving", unitLong: "serving" },
-          metric: { amount: 1.0, unitShort: "serving", unitLong: "serving" },
-        },
+          metric: { amount: 1.0, unitShort: "serving", unitLong: "serving" }
+        }
       },
       {
         id: 2049,
@@ -2477,9 +2477,9 @@ export default [
         metaInformation: ["fresh"],
         measures: {
           us: { amount: 1.0, unitShort: "serving", unitLong: "serving" },
-          metric: { amount: 1.0, unitShort: "serving", unitLong: "serving" },
-        },
-      },
+          metric: { amount: 1.0, unitShort: "serving", unitLong: "serving" }
+        }
+      }
     ],
     id: 658655,
     title: "Roasted red peppers and tomatoes salad",
@@ -2499,7 +2499,7 @@ export default [
       "paleolithic",
       "lacto ovo vegetarian",
       "primal",
-      "vegan",
+      "vegan"
     ],
     occasions: [],
     instructions:
@@ -2517,41 +2517,41 @@ export default [
                 id: 11821,
                 name: "red pepper",
                 localizedName: "red pepper",
-                image: "red-pepper.jpg",
+                image: "red-pepper.jpg"
               },
               {
                 id: 10111333,
                 name: "peppers",
                 localizedName: "peppers",
-                image: "green-pepper.jpg",
+                image: "green-pepper.jpg"
               },
               {
                 id: 10118192,
                 name: "cookies",
                 localizedName: "cookies",
-                image: "shortbread-cookies.jpg",
-              },
+                image: "shortbread-cookies.jpg"
+              }
             ],
             equipment: [
               {
                 id: 404727,
                 name: "baking sheet",
                 localizedName: "baking sheet",
-                image: "baking-sheet.jpg",
+                image: "baking-sheet.jpg"
               },
               {
                 id: 405914,
                 name: "broiler",
                 localizedName: "broiler",
-                image: "oven.jpg",
+                image: "oven.jpg"
               },
               {
                 id: 404706,
                 name: "grill",
                 localizedName: "grill",
-                image: "grill.jpg",
-              },
-            ],
+                image: "grill.jpg"
+              }
+            ]
           },
           {
             number: 2,
@@ -2562,9 +2562,9 @@ export default [
                 id: 404783,
                 name: "bowl",
                 localizedName: "bowl",
-                image: "bowl.jpg",
-              },
-            ],
+                image: "bowl.jpg"
+              }
+            ]
           },
           {
             number: 3,
@@ -2575,22 +2575,22 @@ export default [
                 id: 10111333,
                 name: "peppers",
                 localizedName: "peppers",
-                image: "green-pepper.jpg",
+                image: "green-pepper.jpg"
               },
               {
                 id: 93818,
                 name: "seeds",
                 localizedName: "seeds",
-                image: "sunflower-seeds.jpg",
-              },
+                image: "sunflower-seeds.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 4,
             step: "Cut into large pieces",
             ingredients: [],
-            equipment: [],
+            equipment: []
           },
           {
             number: 5,
@@ -2601,16 +2601,16 @@ export default [
                 id: 10211821,
                 name: "bell pepper",
                 localizedName: "bell pepper",
-                image: "bell-pepper-orange.png",
+                image: "bell-pepper-orange.png"
               },
               {
                 id: 11529,
                 name: "tomato",
                 localizedName: "tomato",
-                image: "tomato.png",
-              },
+                image: "tomato.png"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 6,
@@ -2620,16 +2620,16 @@ export default [
                 id: 10011282,
                 name: "red onion",
                 localizedName: "red onion",
-                image: "red-onion.png",
+                image: "red-onion.png"
               },
               {
                 id: 2054,
                 name: "capers",
                 localizedName: "capers",
-                image: "capers.jpg",
-              },
+                image: "capers.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 7,
@@ -2640,35 +2640,35 @@ export default [
                 id: 0,
                 name: "cracked black peppercorns",
                 localizedName: "cracked black peppercorns",
-                image: "black-pepper.png",
+                image: "black-pepper.png"
               },
               {
                 id: 1002047,
                 name: "coarse salt",
                 localizedName: "coarse salt",
-                image: "salt.jpg",
+                image: "salt.jpg"
               },
               {
                 id: 4053,
                 name: "olive oil",
                 localizedName: "olive oil",
-                image: "olive-oil.jpg",
+                image: "olive-oil.jpg"
               },
               {
                 id: 2049,
                 name: "thyme",
                 localizedName: "thyme",
-                image: "thyme.jpg",
-              },
+                image: "thyme.jpg"
+              }
             ],
-            equipment: [],
-          },
-        ],
-      },
+            equipment: []
+          }
+        ]
+      }
     ],
     originalId: null,
     spoonacularSourceUrl:
-      "https://spoonacular.com/roasted-red-peppers-and-tomatoes-salad-658655",
+      "https://spoonacular.com/roasted-red-peppers-and-tomatoes-salad-658655"
   },
   {
     vegetarian: false,
@@ -2707,8 +2707,8 @@ export default [
         metaInformation: ["canned"],
         measures: {
           us: { amount: 14.5, unitShort: "oz", unitLong: "ounces" },
-          metric: { amount: 411.068, unitShort: "g", unitLong: "grams" },
-        },
+          metric: { amount: 411.068, unitShort: "g", unitLong: "grams" }
+        }
       },
       {
         id: 11124,
@@ -2726,8 +2726,8 @@ export default [
         metaInformation: ["chopped"],
         measures: {
           us: { amount: 2.0, unitShort: "large", unitLong: "larges" },
-          metric: { amount: 2.0, unitShort: "large", unitLong: "larges" },
-        },
+          metric: { amount: 2.0, unitShort: "large", unitLong: "larges" }
+        }
       },
       {
         id: 11143,
@@ -2745,8 +2745,8 @@ export default [
         metaInformation: ["chopped"],
         measures: {
           us: { amount: 2.0, unitShort: "stalks", unitLong: "stalks" },
-          metric: { amount: 2.0, unitShort: "stalks", unitLong: "stalks" },
-        },
+          metric: { amount: 2.0, unitShort: "stalks", unitLong: "stalks" }
+        }
       },
       {
         id: 6147,
@@ -2764,8 +2764,8 @@ export default [
         metaInformation: ["canned"],
         measures: {
           us: { amount: 26.0, unitShort: "oz", unitLong: "ounces" },
-          metric: { amount: 737.088, unitShort: "g", unitLong: "grams" },
-        },
+          metric: { amount: 737.088, unitShort: "g", unitLong: "grams" }
+        }
       },
       {
         id: 11291,
@@ -2783,8 +2783,8 @@ export default [
         metaInformation: ["chopped"],
         measures: {
           us: { amount: 3.0, unitShort: "", unitLong: "" },
-          metric: { amount: 3.0, unitShort: "", unitLong: "" },
-        },
+          metric: { amount: 3.0, unitShort: "", unitLong: "" }
+        }
       },
       {
         id: 11352,
@@ -2802,8 +2802,8 @@ export default [
         metaInformation: ["red", "()"],
         measures: {
           us: { amount: 10.0, unitShort: "", unitLong: "" },
-          metric: { amount: 10.0, unitShort: "", unitLong: "" },
-        },
+          metric: { amount: 10.0, unitShort: "", unitLong: "" }
+        }
       },
       {
         id: 11282,
@@ -2821,8 +2821,8 @@ export default [
         metaInformation: ["chopped"],
         measures: {
           us: { amount: 1.0, unitShort: "small", unitLong: "small" },
-          metric: { amount: 1.0, unitShort: "small", unitLong: "small" },
-        },
+          metric: { amount: 1.0, unitShort: "small", unitLong: "small" }
+        }
       },
       {
         id: 1042027,
@@ -2840,8 +2840,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 0.5, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 118.294, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 118.294, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 10023618,
@@ -2859,8 +2859,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 2.0, unitShort: "lb", unitLong: "pounds" },
-          metric: { amount: 907.185, unitShort: "g", unitLong: "grams" },
-        },
+          metric: { amount: 907.185, unitShort: "g", unitLong: "grams" }
+        }
       },
       {
         id: 14412,
@@ -2878,9 +2878,9 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 2.0, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 473.176, unitShort: "ml", unitLong: "milliliters" },
-        },
-      },
+          metric: { amount: 473.176, unitShort: "ml", unitLong: "milliliters" }
+        }
+      }
     ],
     id: 715446,
     title: "Slow Cooker Beef Stew",
@@ -2910,9 +2910,9 @@ export default [
                 id: 404718,
                 name: "slow cooker",
                 localizedName: "slow cooker",
-                image: "slow-cooker.jpg",
-              },
-            ],
+                image: "slow-cooker.jpg"
+              }
+            ]
           },
           {
             number: 2,
@@ -2923,28 +2923,28 @@ export default [
                 id: 6147,
                 name: "cream of mushroom soup",
                 localizedName: "cream of mushroom soup",
-                image: "cream-of-mushroom-soup.png",
+                image: "cream-of-mushroom-soup.png"
               },
               {
                 id: 6008,
                 name: "beef broth",
                 localizedName: "beef broth",
-                image: "beef-broth.png",
+                image: "beef-broth.png"
               },
               {
                 id: 1042027,
                 name: "seasoning",
                 localizedName: "seasoning",
-                image: "seasoning.png",
+                image: "seasoning.png"
               },
               {
                 id: 14412,
                 name: "water",
                 localizedName: "water",
-                image: "water.png",
-              },
+                image: "water.png"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 3,
@@ -2955,54 +2955,53 @@ export default [
                 id: 1102047,
                 name: "salt and pepper",
                 localizedName: "salt and pepper",
-                image: "salt-and-pepper.jpg",
+                image: "salt-and-pepper.jpg"
               },
               {
                 id: 11291,
                 name: "green onions",
                 localizedName: "green onions",
-                image: "spring-onions.jpg",
+                image: "spring-onions.jpg"
               },
               {
                 id: 10023618,
                 name: "beef stew meat",
                 localizedName: "beef stew meat",
-                image: "beef-cubes-raw.png",
+                image: "beef-cubes-raw.png"
               },
               {
                 id: 11352,
                 name: "potato",
                 localizedName: "potato",
-                image: "potatoes-yukon-gold.png",
+                image: "potatoes-yukon-gold.png"
               },
               {
                 id: 11124,
                 name: "carrot",
                 localizedName: "carrot",
-                image: "sliced-carrot.png",
+                image: "sliced-carrot.png"
               },
               {
                 id: 11143,
                 name: "celery",
                 localizedName: "celery",
-                image: "celery.jpg",
+                image: "celery.jpg"
               },
               {
                 id: 11282,
                 name: "onion",
                 localizedName: "onion",
-                image: "brown-onion.png",
-              },
+                image: "brown-onion.png"
+              }
             ],
             equipment: [],
-            length: { number: 480, unit: "minutes" },
-          },
-        ],
-      },
+            length: { number: 480, unit: "minutes" }
+          }
+        ]
+      }
     ],
     originalId: null,
-    spoonacularSourceUrl:
-      "https://spoonacular.com/slow-cooker-beef-stew-715446",
+    spoonacularSourceUrl: "https://spoonacular.com/slow-cooker-beef-stew-715446"
   },
   {
     vegetarian: true,
@@ -3040,8 +3039,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 2.0, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 473.176, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 473.176, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 4513,
@@ -3059,8 +3058,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "cup", unitLong: "cup" },
-          metric: { amount: 236.588, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 236.588, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 1123,
@@ -3078,8 +3077,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 3.0, unitShort: "", unitLong: "" },
-          metric: { amount: 3.0, unitShort: "", unitLong: "" },
-        },
+          metric: { amount: 3.0, unitShort: "", unitLong: "" }
+        }
       },
       {
         id: 20081,
@@ -3097,8 +3096,8 @@ export default [
         metaInformation: ["sifted"],
         measures: {
           us: { amount: 3.0, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 709.764, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 709.764, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 14146,
@@ -3116,8 +3115,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" },
-          metric: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" },
-        },
+          metric: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" }
+        }
       },
       {
         id: 2047,
@@ -3135,8 +3134,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" },
-          metric: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" },
-        },
+          metric: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" }
+        }
       },
       {
         id: 2010,
@@ -3154,8 +3153,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" },
-          metric: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" },
-        },
+          metric: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" }
+        }
       },
       {
         id: 2050,
@@ -3173,8 +3172,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 2.0, unitShort: "tsps", unitLong: "teaspoons" },
-          metric: { amount: 2.0, unitShort: "tsps", unitLong: "teaspoons" },
-        },
+          metric: { amount: 2.0, unitShort: "tsps", unitLong: "teaspoons" }
+        }
       },
       {
         id: 9003,
@@ -3192,8 +3191,8 @@ export default [
         metaInformation: ["peeled", "chopped"],
         measures: {
           us: { amount: 3.0, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 709.764, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 709.764, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 12104,
@@ -3211,8 +3210,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 2.0, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 473.176, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 473.176, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 9087,
@@ -3230,8 +3229,8 @@ export default [
         metaInformation: ["chopped"],
         measures: {
           us: { amount: 1.0, unitShort: "cup", unitLong: "cup" },
-          metric: { amount: 236.588, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 236.588, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 12142,
@@ -3249,8 +3248,8 @@ export default [
         metaInformation: ["chopped"],
         measures: {
           us: { amount: 1.0, unitShort: "cup", unitLong: "cup" },
-          metric: { amount: 236.588, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 236.588, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 19334,
@@ -3268,8 +3267,8 @@ export default [
         metaInformation: ["packed"],
         measures: {
           us: { amount: 1.0, unitShort: "cup", unitLong: "cup" },
-          metric: { amount: 236.588, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 236.588, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 1001,
@@ -3287,8 +3286,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 0.5, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 118.294, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 118.294, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 1077,
@@ -3306,9 +3305,9 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 0.5, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 118.294, unitShort: "ml", unitLong: "milliliters" },
-        },
-      },
+          metric: { amount: 118.294, unitShort: "ml", unitLong: "milliliters" }
+        }
+      }
     ],
     id: 643426,
     title: "Fresh Apple Cake With Caramel Sauce",
@@ -3339,30 +3338,30 @@ export default [
                 id: 20081,
                 name: "all purpose flour",
                 localizedName: "all purpose flour",
-                image: "flour.png",
+                image: "flour.png"
               },
               {
                 id: 19335,
                 name: "sugar",
                 localizedName: "sugar",
-                image: "sugar-in-bowl.png",
+                image: "sugar-in-bowl.png"
               },
               { id: 1123, name: "egg", localizedName: "egg", image: "egg.png" },
               {
                 id: 2047,
                 name: "salt",
                 localizedName: "salt",
-                image: "salt.jpg",
+                image: "salt.jpg"
               },
               { id: 0, name: "pop", localizedName: "pop", image: "" },
               {
                 id: 4582,
                 name: "cooking oil",
                 localizedName: "cooking oil",
-                image: "vegetable-oil.jpg",
-              },
+                image: "vegetable-oil.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 2,
@@ -3373,47 +3372,47 @@ export default [
                 id: 2010,
                 name: "cinnamon",
                 localizedName: "cinnamon",
-                image: "cinnamon.jpg",
+                image: "cinnamon.jpg"
               },
               {
                 id: 12104,
                 name: "coconut",
                 localizedName: "coconut",
-                image: "coconut.jpg",
+                image: "coconut.jpg"
               },
               {
                 id: 1052050,
                 name: "vanilla",
                 localizedName: "vanilla",
-                image: "vanilla.jpg",
+                image: "vanilla.jpg"
               },
               {
                 id: 9003,
                 name: "apple",
                 localizedName: "apple",
-                image: "apple.jpg",
+                image: "apple.jpg"
               },
               {
                 id: 12142,
                 name: "pecans",
                 localizedName: "pecans",
-                image: "pecans.jpg",
+                image: "pecans.jpg"
               },
               {
                 id: 9087,
                 name: "dates",
                 localizedName: "dates",
-                image: "dates.jpg",
-              },
+                image: "dates.jpg"
+              }
             ],
             equipment: [
               {
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
-              },
-            ],
+                image: "pan.png"
+              }
+            ]
           },
           {
             number: 3,
@@ -3425,16 +3424,16 @@ export default [
                 id: 404644,
                 name: "toothpicks",
                 localizedName: "toothpicks",
-                image: "toothpicks.jpg",
+                image: "toothpicks.jpg"
               },
               {
                 id: 404784,
                 name: "oven",
                 localizedName: "oven",
-                image: "oven.jpg",
-              },
+                image: "oven.jpg"
+              }
             ],
-            length: { number: 120, unit: "minutes" },
+            length: { number: 120, unit: "minutes" }
           },
           {
             number: 4,
@@ -3445,31 +3444,31 @@ export default [
                 id: 19364,
                 name: "caramel sauce",
                 localizedName: "caramel sauce",
-                image: "caramel-sauce.jpg",
-              },
+                image: "caramel-sauce.jpg"
+              }
             ],
             equipment: [
               {
                 id: 404784,
                 name: "oven",
                 localizedName: "oven",
-                image: "oven.jpg",
+                image: "oven.jpg"
               },
               {
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
-              },
+                image: "pan.png"
+              }
             ],
-            length: { number: 2, unit: "minutes" },
-          },
-        ],
-      },
+            length: { number: 2, unit: "minutes" }
+          }
+        ]
+      }
     ],
     originalId: null,
     spoonacularSourceUrl:
-      "https://spoonacular.com/fresh-apple-cake-with-caramel-sauce-643426",
+      "https://spoonacular.com/fresh-apple-cake-with-caramel-sauce-643426"
   },
   {
     vegetarian: true,
@@ -3508,8 +3507,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 8.0, unitShort: "oz", unitLong: "ounces" },
-          metric: { amount: 226.796, unitShort: "g", unitLong: "grams" },
-        },
+          metric: { amount: 226.796, unitShort: "g", unitLong: "grams" }
+        }
       },
       {
         id: 9316,
@@ -3527,8 +3526,8 @@ export default [
         metaInformation: ["diced"],
         measures: {
           us: { amount: 1.25, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 295.735, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 295.735, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 2050,
@@ -3546,8 +3545,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" },
-          metric: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" },
-        },
+          metric: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" }
+        }
       },
       {
         id: 9152,
@@ -3565,8 +3564,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" },
-          metric: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" },
-        },
+          metric: { amount: 1.0, unitShort: "tsp", unitLong: "teaspoon" }
+        }
       },
       {
         id: 19335,
@@ -3584,8 +3583,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 2.0, unitShort: "Tbsps", unitLong: "Tbsps" },
-          metric: { amount: 2.0, unitShort: "Tbsps", unitLong: "Tbsps" },
-        },
+          metric: { amount: 2.0, unitShort: "Tbsps", unitLong: "Tbsps" }
+        }
       },
       {
         id: 20081,
@@ -3603,8 +3602,8 @@ export default [
         metaInformation: ["all-purpose"],
         measures: {
           us: { amount: 1.5, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 354.882, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 354.882, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 19165,
@@ -3622,8 +3621,8 @@ export default [
         metaInformation: ["unsweetened"],
         measures: {
           us: { amount: 0.25, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 59.147, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 59.147, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 1082047,
@@ -3641,8 +3640,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 0.125, unitShort: "tsps", unitLong: "teaspoons" },
-          metric: { amount: 0.125, unitShort: "tsps", unitLong: "teaspoons" },
-        },
+          metric: { amount: 0.125, unitShort: "tsps", unitLong: "teaspoons" }
+        }
       },
       {
         id: 1123,
@@ -3660,8 +3659,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 3.0, unitShort: "", unitLong: "" },
-          metric: { amount: 3.0, unitShort: "", unitLong: "" },
-        },
+          metric: { amount: 3.0, unitShort: "", unitLong: "" }
+        }
       },
       {
         id: 1077,
@@ -3679,8 +3678,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 1.25, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 295.735, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 295.735, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 14412,
@@ -3698,8 +3697,8 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 0.25, unitShort: "cups", unitLong: "cups" },
-          metric: { amount: 59.147, unitShort: "ml", unitLong: "milliliters" },
-        },
+          metric: { amount: 59.147, unitShort: "ml", unitLong: "milliliters" }
+        }
       },
       {
         id: 1145,
@@ -3717,8 +3716,8 @@ export default [
         metaInformation: ["unsalted", "melted"],
         measures: {
           us: { amount: 4.0, unitShort: "Tbsps", unitLong: "Tbsps" },
-          metric: { amount: 4.0, unitShort: "Tbsps", unitLong: "Tbsps" },
-        },
+          metric: { amount: 4.0, unitShort: "Tbsps", unitLong: "Tbsps" }
+        }
       },
       {
         id: 2050,
@@ -3736,9 +3735,9 @@ export default [
         metaInformation: [],
         measures: {
           us: { amount: 0.5, unitShort: "tsps", unitLong: "teaspoons" },
-          metric: { amount: 0.5, unitShort: "tsps", unitLong: "teaspoons" },
-        },
-      },
+          metric: { amount: 0.5, unitShort: "tsps", unitLong: "teaspoons" }
+        }
+      }
     ],
     id: 715569,
     title: "Strawberry Cheesecake Chocolate Crepes",
@@ -3768,16 +3767,16 @@ export default [
                 id: 9316,
                 name: "strawberries",
                 localizedName: "strawberries",
-                image: "strawberries.png",
+                image: "strawberries.png"
               },
               {
                 id: 1041009,
                 name: "cheese",
                 localizedName: "cheese",
-                image: "cheddar-cheese.png",
-              },
+                image: "cheddar-cheese.png"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 2,
@@ -3788,41 +3787,41 @@ export default [
                 id: 10719335,
                 name: "granulated sugar",
                 localizedName: "granulated sugar",
-                image: "sugar-in-bowl.png",
+                image: "sugar-in-bowl.png"
               },
               {
                 id: 2050,
                 name: "vanilla extract",
                 localizedName: "vanilla extract",
-                image: "vanilla-extract.jpg",
+                image: "vanilla-extract.jpg"
               },
               {
                 id: 1017,
                 name: "cream cheese",
                 localizedName: "cream cheese",
-                image: "cream-cheese.jpg",
+                image: "cream-cheese.jpg"
               },
               {
                 id: 9316,
                 name: "strawberries",
                 localizedName: "strawberries",
-                image: "strawberries.png",
+                image: "strawberries.png"
               },
               {
                 id: 9152,
                 name: "lemon juice",
                 localizedName: "lemon juice",
-                image: "lemon-juice.jpg",
-              },
+                image: "lemon-juice.jpg"
+              }
             ],
             equipment: [
               {
                 id: 405907,
                 name: "mixing bowl",
                 localizedName: "mixing bowl",
-                image: "mixing-bowl.jpg",
-              },
-            ],
+                image: "mixing-bowl.jpg"
+              }
+            ]
           },
           {
             number: 3,
@@ -3834,27 +3833,27 @@ export default [
                 id: 404732,
                 name: "wooden spoon",
                 localizedName: "wooden spoon",
-                image: "wooden-spoon.jpg",
+                image: "wooden-spoon.jpg"
               },
               {
                 id: 404628,
                 name: "hand mixer",
                 localizedName: "hand mixer",
-                image: "hand-mixer.png",
+                image: "hand-mixer.png"
               },
               {
                 id: 404642,
                 name: "spatula",
                 localizedName: "spatula",
-                image: "spatula-or-turner.jpg",
-              },
-            ],
+                image: "spatula-or-turner.jpg"
+              }
+            ]
           },
           {
             number: 4,
             step: "Mix until smooth.",
             ingredients: [],
-            equipment: [],
+            equipment: []
           },
           { number: 5, step: "Set aside.", ingredients: [], equipment: [] },
           {
@@ -3865,16 +3864,16 @@ export default [
                 id: 19081,
                 name: "chocolate",
                 localizedName: "chocolate",
-                image: "milk-chocolate.jpg",
+                image: "milk-chocolate.jpg"
               },
               {
                 id: 93732,
                 name: "crepes",
                 localizedName: "crepes",
-                image: "crepes-isolated.jpg",
-              },
+                image: "crepes-isolated.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 7,
@@ -3885,42 +3884,42 @@ export default [
                 id: 19165,
                 name: "cocoa powder",
                 localizedName: "cocoa powder",
-                image: "cocoa-powder.png",
+                image: "cocoa-powder.png"
               },
               {
                 id: 20081,
                 name: "all purpose flour",
                 localizedName: "all purpose flour",
-                image: "flour.png",
+                image: "flour.png"
               },
               {
                 id: 19335,
                 name: "sugar",
                 localizedName: "sugar",
-                image: "sugar-in-bowl.png",
+                image: "sugar-in-bowl.png"
               },
               { id: 1123, name: "egg", localizedName: "egg", image: "egg.png" },
               {
                 id: 2047,
                 name: "salt",
                 localizedName: "salt",
-                image: "salt.jpg",
-              },
+                image: "salt.jpg"
+              }
             ],
             equipment: [
               {
                 id: 404771,
                 name: "food processor",
                 localizedName: "food processor",
-                image: "food-processor.png",
+                image: "food-processor.png"
               },
               {
                 id: 404726,
                 name: "blender",
                 localizedName: "blender",
-                image: "blender.png",
-              },
-            ],
+                image: "blender.png"
+              }
+            ]
           },
           {
             number: 8,
@@ -3931,23 +3930,23 @@ export default [
                 id: 14412,
                 name: "water",
                 localizedName: "water",
-                image: "water.png",
+                image: "water.png"
               },
               {
                 id: 1077,
                 name: "milk",
                 localizedName: "milk",
-                image: "milk.png",
-              },
+                image: "milk.png"
+              }
             ],
             equipment: [
               {
                 id: 404771,
                 name: "food processor",
                 localizedName: "food processor",
-                image: "food-processor.png",
-              },
-            ],
+                image: "food-processor.png"
+              }
+            ]
           },
           {
             number: 9,
@@ -3957,16 +3956,16 @@ export default [
                 id: 2050,
                 name: "vanilla extract",
                 localizedName: "vanilla extract",
-                image: "vanilla-extract.jpg",
+                image: "vanilla-extract.jpg"
               },
               {
                 id: 1001,
                 name: "butter",
                 localizedName: "butter",
-                image: "butter-sliced.jpg",
-              },
+                image: "butter-sliced.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 10,
@@ -3977,9 +3976,9 @@ export default [
                 id: 404783,
                 name: "bowl",
                 localizedName: "bowl",
-                image: "bowl.jpg",
-              },
-            ],
+                image: "bowl.jpg"
+              }
+            ]
           },
           {
             number: 11,
@@ -3989,16 +3988,16 @@ export default [
                 id: 19081,
                 name: "chocolate",
                 localizedName: "chocolate",
-                image: "milk-chocolate.jpg",
+                image: "milk-chocolate.jpg"
               },
               {
                 id: 93732,
                 name: "crepes",
                 localizedName: "crepes",
-                image: "crepes-isolated.jpg",
-              },
+                image: "crepes-isolated.jpg"
+              }
             ],
-            equipment: [],
+            equipment: []
           },
           {
             number: 12,
@@ -4009,9 +4008,9 @@ export default [
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
-              },
-            ],
+                image: "pan.png"
+              }
+            ]
           },
           {
             number: 13,
@@ -4023,9 +4022,9 @@ export default [
                 id: 404645,
                 name: "frying pan",
                 localizedName: "frying pan",
-                image: "pan.png",
-              },
-            ],
+                image: "pan.png"
+              }
+            ]
           },
           {
             number: 14,
@@ -4033,26 +4032,26 @@ export default [
               "Cook the crepe for 2-3 minutes or until the bottom is light brown and the edges are completely set.",
             ingredients: [],
             equipment: [],
-            length: { number: 3, unit: "minutes" },
+            length: { number: 3, unit: "minutes" }
           },
           {
             number: 15,
             step: "Flip the crepe over and cook for an additional minute.",
             ingredients: [],
-            equipment: [],
+            equipment: []
           },
           {
             number: 16,
             step:
               "Transfer to a serving platter and repeat for the rest of the batter.",
             ingredients: [],
-            equipment: [],
-          },
-        ],
-      },
+            equipment: []
+          }
+        ]
+      }
     ],
     originalId: null,
     spoonacularSourceUrl:
-      "https://spoonacular.com/strawberry-cheesecake-chocolate-crepes-715569",
-  },
+      "https://spoonacular.com/strawberry-cheesecake-chocolate-crepes-715569"
+  }
 ];
