@@ -24,7 +24,7 @@ export default {
     context.commit("setRecipes", recipes.recipes);
   },
   async loadRecipe(context, payload) {
-    const savedRecipe = getLocalRecipe(payload.id);
+    const savedRecipe = JSON.parse(getLocalRecipe(payload.id));
     if (savedRecipe) {
       return context.commit("setSelectedRecipe", savedRecipe);
     }

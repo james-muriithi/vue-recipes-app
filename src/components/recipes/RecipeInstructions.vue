@@ -1,29 +1,34 @@
 <template>
-  <h3>Instructions</h3>
-  <ol>
-    <li>preheat oven to 350º</li>
-    <li>bring noodles to a boil then drain</li>
-    <li>
-      while noodles are cooking in a bowl mix ricotta cheese, mozzarella cheese
-      and olives together. it will be thick
-    </li>
-    <li>cook ground beef then drain</li>
-    <li>add spaghetti sauce to ground beef</li>
-    <li>
-      add pasta to beef and sauce mix, stir until well blended then move to 16x9
-      casserole dish
-    </li>
-    <li>spread cheese mixture all over evenly</li>
-    <li>
-      place pepperonis on top snd remember to partially overlap pepperonis since
-      they shrink
-    </li>
-    <li>back in 350º oven for 20 minutes</li>
-  </ol>
+  <div v-if="instructions && instructions.length > 0">
+    <h3>Instructions</h3>
+    <ol>
+      <li v-for="instruction in instructions" :key="instruction.number">
+          {{instruction.step}}
+      </li>
+    </ol>
+  </div>
 </template>
 
+<script>
+export default {
+  props: {
+    instructions: {
+      type: Object,
+      required: true,
+    },
+  },
+  created(){
+    console.log(this.instructions);
+  }
+};
+</script>
+
 <style scoped>
-ol{
-    text-align: left;
+ol {
+  text-align: left;
+}
+ol li{
+  line-height: 28px;
+  padding-bottom: 4px;
 }
 </style>

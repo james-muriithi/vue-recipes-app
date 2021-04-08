@@ -1,15 +1,24 @@
 <template>
-  <h3>Ingredients</h3>
+  <div v-if="ingredients && ingredients.length > 0">
+    <h3>Ingredients</h3>
   <ul>
-    <li><strong>16 oz</strong> rotini noodles</li>
-    <li><strong>24 oz</strong> spaghetti sauce (prego traditional)</li>
-    <li><strong>1/2 lb</strong> ground beef</li>
-    <li><strong>15 oz</strong> ricotta cheese</li>
-    <li><strong>14 oz</strong> mozzarella shredded</li>
-    <li><strong>1 can</strong> sliced olives</li>
-    <li><strong>1 packages</strong> pepperoni slices</li>
+    <li v-for="ingredient in ingredients" :key="ingredient">
+        {{ingredient.name}}
+    </li>
   </ul>
+  </div>
 </template>
+
+<script>
+export default {
+  props: {
+    ingredients: {
+      type: Object,
+      required: true
+    }
+  }
+}
+</script>
 
 <style scoped>
 ul{
@@ -20,6 +29,7 @@ ul li{
   position: relative;
   margin-top: 10px;
   padding-left: 25px;
+  text-transform: capitalize;
 }
 li::before {
     font-family: "Font Awesome 5 Free";
