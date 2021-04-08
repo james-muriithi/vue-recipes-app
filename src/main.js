@@ -11,16 +11,6 @@ const app = createApp(App);
 
 app.use(router);
 app.use(store);
-app.use(VueLazyLoad, {
-  loading: () => {
-    console.log("loading");
-  },
-  error: () => {
-    console.log("error");
-  },
-  loaded: () => {
-    console.log("loaded");
-  }
-});
+app.use(VueLazyLoad);
 
 app.mount("#app");

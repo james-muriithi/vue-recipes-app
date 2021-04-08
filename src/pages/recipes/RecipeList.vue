@@ -45,7 +45,6 @@ export default {
     async loadLatestRecipes(options) {
       this.isLoading = true;
       try {
-        console.log(this.isLoading);
         await this.$store.dispatch("loadLatestRecipes", options);
       } catch (error) {
         console.log(error);

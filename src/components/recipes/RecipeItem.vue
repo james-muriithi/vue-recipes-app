@@ -3,13 +3,13 @@
     <div class="recipe-item margin-bottom-40px shadow-box mx-2">
       <div class="card border-0">
         <div class="card-img-top">
-          <a href="#">
+          <a :href="`recipes/${id}`">
             <img class="img-fluid w-100" v-lazy="lazyLoadOptions" />
           </a>
         </div>
         <div class="padding-lr-20px padding-tb-20px">
           <h5 class="margin-bottom-20px margin-top-10px">
-            <a class="text-black" href="#">{{ title }}</a>
+            <a class="text-black" :href="`recipes/${id}`">{{ title }}</a>
           </h5>
           <hr />
           <div class="row no-gutters">

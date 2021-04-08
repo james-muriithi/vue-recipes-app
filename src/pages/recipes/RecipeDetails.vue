@@ -1,7 +1,5 @@
 <template>
-  <recipe-item-header
-    title=""
-  ></recipe-item-header>
+  <recipe-item-header title=""></recipe-item-header>
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
@@ -11,7 +9,9 @@
           </div>
           <div class="padding-lr-30px padding-tb-20px">
             <div class="margin-bottom-20px margin-top-10px">
-              <h4 class="text-dark" href="#">Pasta with Garlic, Scallions, Cauliflower & Breadcrumbs</h4>
+              <h4 class="text-dark" href="#">
+                Pasta with Garlic, Scallions, Cauliflower & Breadcrumbs
+              </h4>
             </div>
             <recipe-ingredients></recipe-ingredients>
 
@@ -25,9 +25,9 @@
                 >
               </div>
               <div class="col-8 text-right">
-              <a href="#" class="text-grey-2"
-                ><i class="fas fa-share"></i> share</a
-              >
+                <a href="#" class="text-grey-2"
+                  ><i class="fas fa-share"></i> share</a
+                >
               </div>
             </div>
           </div>
@@ -39,13 +39,34 @@
 
 <script>
 import RecipeItemHeader from "../../components/recipes/RecipeItemHeader.vue";
-import RecipeIngredients from '../../components/recipes/RecipeIngredients.vue'
-import RecipeInstructions from '../../components/recipes/RecipeInstructions.vue'
+import RecipeIngredients from "../../components/recipes/RecipeIngredients.vue";
+import RecipeInstructions from "../../components/recipes/RecipeInstructions.vue";
 export default {
+    props: ['id'],
   components: {
     RecipeItemHeader,
     RecipeIngredients,
-    RecipeInstructions
+    RecipeInstructions,
+  },
+  data(){
+      return {
+          isLoading: false
+      }
+  },
+  methods: {
+    async loadRecipe() {
+        const recipeId = this.id;
+        this.isLoading = true;
+        try {
+            await this.$store.dispatch('loadRecipe', {id: recipeId})
+        } catch (error) {
+            console.log(error);
+        }
+        this.isLoading = false;
+    },
+  },
+  created() {
+      this.loadRecipe()
   },
 };
 </script>

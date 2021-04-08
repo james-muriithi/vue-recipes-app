@@ -1,7 +1,10 @@
 import {
   fetchRecipes,
   saveRecipes,
-  getLocalRecipes
+  getLocalRecipes,
+  getLocalRecipe,
+  saveRecipe,
+  fetchRecipe,
 } from "../../../helpers/Recipes.js";
 export default {
   async loadLatestRecipes(context, payload) {
@@ -19,5 +22,17 @@ export default {
     saveRecipes(JSON.stringify(recipes.recipes));
 
     context.commit("setRecipes", recipes.recipes);
-  }
+  },
+  async loadRecipe(context, payload) {
+    const savedRecipe = getLocalRecipe(payload.id);
+    if (savedRecipe) {
+      return context.commit("setSelectedRecipe", savedRecipe);
+    }
+
+    const recipe = await fetchRecipe(payload.id);
+
+    saveRecipe(JSON.stringify(recipe), payload.id);
+
+    context.commit("setSelectedRecipe", recipe);
+  },
 };
