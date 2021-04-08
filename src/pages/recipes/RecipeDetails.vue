@@ -18,7 +18,9 @@
                 :ingredients="recipe.extendedIngredients"
               ></recipe-ingredients>
 
-              <recipe-instructions :instructions="instructions"></recipe-instructions>
+              <recipe-instructions
+                :instructions="instructions"
+              ></recipe-instructions>
 
               <hr />
               <div class="row no-gutters">
@@ -50,11 +52,11 @@ export default {
   components: {
     RecipeItemHeader,
     RecipeIngredients,
-    RecipeInstructions,
+    RecipeInstructions
   },
   data() {
     return {
-      isLoading: false,
+      isLoading: false
     };
   },
   methods: {
@@ -67,7 +69,7 @@ export default {
         console.log(error);
       }
       this.isLoading = false;
-    },
+    }
   },
   computed: {
     recipe() {
@@ -77,7 +79,7 @@ export default {
       return {
         src: this.recipe.image,
         loading: require("../../assets/fast-food.svg"),
-        error: require("../../assets/fast-food.svg"),
+        error: require("../../assets/fast-food.svg")
       };
     },
     instructions() {
@@ -89,13 +91,12 @@ export default {
         instructions = this.recipe.analyzedInstructions[0].steps;
       }
       return instructions;
-    },
+    }
   },
   created() {
     this.loadRecipe();
-  },
+  }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

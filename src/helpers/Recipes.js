@@ -42,5 +42,5 @@ export {
   fetchRecipes,
   saveRecipe,
   getLocalRecipe,
-  fetchRecipe,
+  fetchRecipe
 };

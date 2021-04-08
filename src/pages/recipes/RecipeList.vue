@@ -31,7 +31,7 @@ export default {
   name: "App",
   components: {
     RecipeItem,
-    RecipeItemShimmer,
+    RecipeItemShimmer
   },
   data() {
     return { isLoading: false, loadingDivs: new Array(15).fill(0) };
@@ -39,7 +39,7 @@ export default {
   computed: {
     recipes() {
       return this.$store.getters.recipes;
-    },
+    }
   },
   methods: {
     async loadLatestRecipes(options) {
@@ -51,10 +51,10 @@ export default {
       }
 
       this.isLoading = false;
-    },
+    }
   },
   created() {
     this.loadLatestRecipes({ forceReload: false });
-  },
+  }
 };
 </script>

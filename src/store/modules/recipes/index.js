@@ -6,7 +6,7 @@ export default {
   state() {
     return {
       recipes: [],
-      selectedRecipe: null,
+      selectedRecipe: null
     };
   },
   mutations,

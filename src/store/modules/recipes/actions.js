@@ -4,7 +4,7 @@ import {
   getLocalRecipes,
   getLocalRecipe,
   saveRecipe,
-  fetchRecipe,
+  fetchRecipe
 } from "../../../helpers/Recipes.js";
 export default {
   async loadLatestRecipes(context, payload) {
@@ -34,5 +34,5 @@ export default {
     saveRecipe(JSON.stringify(recipe), payload.id);
 
     context.commit("setSelectedRecipe", recipe);
-  },
+  }
 };

@@ -3,7 +3,7 @@
     <h3>Instructions</h3>
     <ol>
       <li v-for="instruction in instructions" :key="instruction.number">
-          {{instruction.step}}
+        {{ instruction.step }}
       </li>
     </ol>
   </div>
@@ -14,10 +14,10 @@ export default {
   props: {
     instructions: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
-  created(){
+  created() {
     console.log(this.instructions);
   }
 };
@@ -27,7 +27,7 @@ export default {
 ol {
   text-align: left;
 }
-ol li{
+ol li {
   line-height: 28px;
   padding-bottom: 4px;
 }
