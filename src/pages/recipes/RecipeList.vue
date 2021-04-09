@@ -14,19 +14,21 @@
     <div v-else>
       <div v-if="recipes" class="row">
         <recipe-item
-        v-for="recipe in recipes"
-        :key="recipe.id"
-        :title="recipe.title"
-        :id="recipe.id"
-        :imgSrc="recipe.image"
-      ></recipe-item>
+          v-for="recipe in recipes"
+          :key="recipe.id"
+          :title="recipe.title"
+          :id="recipe.id"
+          :imgSrc="recipe.image"
+        ></recipe-item>
       </div>
-      <div class="text-center">
-        <p>No recipes were found</p>
+      <div class="text-center" v-else>
+        <p>No recipes found</p>
       </div>
     </div>
     <div class="text-center mb-4" v-if="shouldLoadMore">
-      <button @click="loadMore" class="btn btn-primary py-2 px-4 rounded-pill">Load more</button>
+      <button @click="loadMore" class="btn btn-primary py-2 px-4 rounded-pill">
+        Load more
+      </button>
     </div>
   </div>
 </template>
@@ -40,17 +42,21 @@ export default {
   name: "App",
   components: {
     RecipeItem,
-    RecipeItemShimmer,
+    RecipeItemShimmer
   },
   data() {
-    return { isLoading: false, loadingDivs: new Array(15).fill(0), error: null };
+    return {
+      isLoading: false,
+      loadingDivs: new Array(15).fill(0),
+      error: null
+    };
   },
   computed: {
     recipes() {
       console.log(this.$store.getters.loadedRecipes.length);
       return this.$store.getters.loadedRecipes;
     },
-    ...mapGetters(['shouldLoadMore']),
+    ...mapGetters(["shouldLoadMore"])
   },
   methods: {
     async loadLatestRecipes(options) {
@@ -58,17 +64,17 @@ export default {
       try {
         await this.$store.dispatch("loadLatestRecipes", options);
       } catch (error) {
-        this.error = error.message
+        this.error = error.message;
         console.log(error);
       }
 
       this.isLoading = false;
     },
-    ...mapActions(['loadMore'])
+    ...mapActions(["loadMore"])
   },
   created() {
     this.loadLatestRecipes({ forceReload: false });
-  },
+  }
 };
 </script>
 

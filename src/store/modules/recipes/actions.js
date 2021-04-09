@@ -4,7 +4,7 @@ import {
   getLocalRecipes,
   getLocalRecipe,
   saveRecipe,
-  fetchRecipe,
+  fetchRecipe
 } from "../../../helpers/Recipes.js";
 export default {
   async loadLatestRecipes(context, payload) {
@@ -63,7 +63,7 @@ export default {
           ? allRecipes.length
           : loadedRecipes.length + parseInt(context.state.pagination);
 
-          context.commit('setLoadedRecipes', allRecipes.slice(0, newLoadedRecipes));
+      context.commit("setLoadedRecipes", allRecipes.slice(0, newLoadedRecipes));
     }
-  },
+  }
 };

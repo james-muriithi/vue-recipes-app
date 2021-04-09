@@ -7,53 +7,57 @@
     <div v-else>
       <div class="row" v-if="recipe">
         <div class="col-lg-8">
-        <div class="margin-bottom-40px card border-0 box-shadow">
-          <div v-if="recipe">
-            <div class="card-img-top">
-              <img class="img-fluid w-100" v-lazy="lazyLoadOptions" />
-            </div>
-            <div class="padding-lr-30px padding-tb-20px">
-              <div class="margin-bottom-20px margin-top-10px">
-                <h4 class="text-dark" href="#">
-                  {{ recipe.title }}
-                </h4>
+          <div class="margin-bottom-40px card border-0 box-shadow">
+            <div v-if="recipe">
+              <div class="card-img-top">
+                <img class="img-fluid w-100" v-lazy="lazyLoadOptions" />
               </div>
-              <recipe-ingredients
-                :ingredients="recipe.extendedIngredients"
-              ></recipe-ingredients>
-
-              <recipe-instructions
-                :instructions="instructions"
-              ></recipe-instructions>
-
-              <hr />
-              <div class="row no-gutters">
-                <div class="col-4 text-left">
-                  <a href="#" class="text-red"
-                    ><i class="far fa-heart"></i> Save</a
-                  >
+              <div class="padding-lr-30px padding-tb-20px">
+                <div class="margin-bottom-20px margin-top-10px">
+                  <h4 class="text-dark" href="#">
+                    {{ recipe.title }}
+                  </h4>
                 </div>
-                <div class="col-8 text-right">
-                  <a href="#" class="text-grey-2"
-                    ><i class="fas fa-share"></i> share</a
-                  >
+                <recipe-ingredients
+                  :ingredients="recipe.extendedIngredients"
+                ></recipe-ingredients>
+
+                <recipe-instructions
+                  :instructions="instructions"
+                ></recipe-instructions>
+
+                <hr />
+                <div class="row no-gutters">
+                  <div class="col-4 text-left">
+                    <a href="#" class="text-red"
+                      ><i class="far fa-heart"></i> Save</a
+                    >
+                  </div>
+                  <div class="col-8 text-right">
+                    <a href="#" class="text-grey-2"
+                      ><i class="fas fa-share"></i> share</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="p-4 shadow" v-if="recipe.summary">
-          <h5>Summary</h5>
-          <hr />
-          <div class="text-left">
-            <p v-html="recipe.summary"></p>
+        <div class="col-lg-4">
+          <div class="p-4 shadow" v-if="recipe.summary">
+            <h5>Summary</h5>
+            <hr />
+            <div class="text-left">
+              <p v-html="recipe.summary"></p>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-      <not-found v-else headerTitle="" description="The recipe you are looking for is not available!"></not-found>
+      <not-found
+        v-else
+        headerTitle=""
+        description="The recipe you are looking for is not available!"
+      ></not-found>
     </div>
   </div>
 </template>
@@ -62,7 +66,7 @@
 import RecipeItemHeader from "../../components/recipes/RecipeItemHeader.vue";
 import RecipeIngredients from "../../components/recipes/RecipeIngredients.vue";
 import RecipeInstructions from "../../components/recipes/RecipeInstructions.vue";
-import NotFound from '../NotFound.vue';
+import NotFound from "../NotFound.vue";
 export default {
   props: ["id"],
   components: {

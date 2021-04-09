@@ -5,13 +5,13 @@
         <div class="col-sm-12">
           <div class="col-sm-10 col-sm-offset-1 text-center">
             <div class="four_zero_four_bg">
-              <h1 class="text-center">{{headerTitle}}</h1>
+              <h1 class="text-center">{{ headerTitle }}</h1>
             </div>
 
             <div class="contant_box_404">
-              <h3 class="h2">{{title}}</h3>
+              <h3 class="h2">{{ title }}</h3>
 
-              <p>{{description}}</p>
+              <p>{{ description }}</p>
 
               <router-link to="/" class=" btn link_404">Go to Home</router-link>
             </div>
@@ -27,18 +27,18 @@ export default {
   props: {
     headerTitle: {
       type: String,
-      default: '404'
+      default: "404"
     },
     title: {
       type: String,
-      default: 'Look like you\'re lost'
+      default: "Looks like you're lost"
     },
     description: {
       type: String,
-      default: 'The page you are looking for not avaible!'
+      default: "The page you are looking for not avaible!"
     }
   }
-}
+};
 </script>
 
 <style scoped>
