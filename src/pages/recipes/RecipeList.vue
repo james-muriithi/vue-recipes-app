@@ -20,6 +20,9 @@
         :imgSrc="recipe.image"
       ></recipe-item>
     </div>
+    <div class="text-center mb-4">
+      <button class="btn btn-danger py-2 px-4 rounded-pill">Load more</button>
+    </div>
   </div>
 </template>
 
@@ -38,7 +41,8 @@ export default {
   },
   computed: {
     recipes() {
-      return this.$store.getters.recipes;
+      console.log(this.$store.getters.loadedRecipes.length);
+      return this.$store.getters.loadedRecipes;
     }
   },
   methods: {
@@ -58,3 +62,12 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+button:focus,
+button:active {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+</style>

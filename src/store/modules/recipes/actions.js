@@ -11,17 +11,33 @@ export default {
     if (!context.getters.recipes || context.getters.recipes.length == 0) {
       const recipes = JSON.parse(getLocalRecipes()) || [];
       context.commit("setRecipes", recipes);
+      context.commit(
+        "setLoadedRecipes",
+        recipes.slice(
+          context.state.loadedRecipes.length,
+          context.state.pagination
+        )
+      );
     }
 
     if (!payload.forceReload && context.getters.recipes.length > 0) {
       return;
     }
 
-    const recipes = await fetchRecipes();
+    let recipes = await fetchRecipes();
 
-    saveRecipes(JSON.stringify(recipes.recipes));
+    recipes = recipes.recipes;
 
-    context.commit("setRecipes", recipes.recipes);
+    saveRecipes(JSON.stringify(recipes));
+
+    context.commit("setRecipes", recipes);
+    context.commit(
+      "setLoadedRecipes",
+      recipes.slice(
+        context.state.loadedRecipes.length,
+        context.state.pagination
+      )
+    );
   },
   async loadRecipe(context, payload) {
     const savedRecipe = JSON.parse(getLocalRecipe(payload.id));

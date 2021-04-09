@@ -6,6 +6,8 @@ export default {
   state() {
     return {
       recipes: [],
+      pagination: 20,
+      loadedRecipes: [],
       selectedRecipe: null
     };
   },

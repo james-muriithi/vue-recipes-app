@@ -4,5 +4,8 @@ export default {
   },
   selectedRecipe(state) {
     return state.selectedRecipe;
+  },
+  loadedRecipes(state) {
+    return state.loadedRecipes;
   }
 };

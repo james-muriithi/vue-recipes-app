@@ -45,7 +45,7 @@
       <div class="col-lg-4">
         <div class="p-4 shadow" v-if="recipe.summary">
           <h5>Summary</h5>
-          <hr>
+          <hr />
           <div class="text-left">
             <p v-html="recipe.summary"></p>
           </div>
