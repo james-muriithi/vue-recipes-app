@@ -4,7 +4,7 @@ import {
   getLocalRecipes,
   getLocalRecipe,
   saveRecipe,
-  fetchRecipe
+  fetchRecipe,
 } from "../../../helpers/Recipes.js";
 export default {
   async loadLatestRecipes(context, payload) {
@@ -50,5 +50,20 @@ export default {
     saveRecipe(JSON.stringify(recipe), payload.id);
 
     context.commit("setSelectedRecipe", recipe);
-  }
+  },
+
+  loadMore(context) {
+    const loadedRecipes = context.state.loadedRecipes;
+    const allRecipes = context.state.recipes;
+
+    if (allRecipes.length > loadedRecipes.length) {
+      const newLoadedRecipes =
+        loadedRecipes.length + parseInt(context.state.pagination) >
+        allRecipes.length
+          ? allRecipes.length
+          : loadedRecipes.length + parseInt(context.state.pagination);
+
+          context.commit('setLoadedRecipes', allRecipes.slice(0, newLoadedRecipes));
+    }
+  },
 };

@@ -20,13 +20,14 @@
         :imgSrc="recipe.image"
       ></recipe-item>
     </div>
-    <div class="text-center mb-4">
-      <button class="btn btn-danger py-2 px-4 rounded-pill">Load more</button>
+    <div class="text-center mb-4" v-if="shouldLoadMore">
+      <button @click="loadMore" class="btn btn-danger py-2 px-4 rounded-pill">Load more</button>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters, mapActions } from "vuex";
 import RecipeItem from "../../components/recipes/RecipeItem.vue";
 import RecipeItemShimmer from "../../components/recipes/RecipeItemShimmer.vue";
 
@@ -34,7 +35,7 @@ export default {
   name: "App",
   components: {
     RecipeItem,
-    RecipeItemShimmer
+    RecipeItemShimmer,
   },
   data() {
     return { isLoading: false, loadingDivs: new Array(15).fill(0) };
@@ -43,7 +44,8 @@ export default {
     recipes() {
       console.log(this.$store.getters.loadedRecipes.length);
       return this.$store.getters.loadedRecipes;
-    }
+    },
+    ...mapGetters(['shouldLoadMore']),
   },
   methods: {
     async loadLatestRecipes(options) {
@@ -55,11 +57,12 @@ export default {
       }
 
       this.isLoading = false;
-    }
+    },
+    ...mapActions(['loadMore'])
   },
   created() {
     this.loadLatestRecipes({ forceReload: false });
-  }
+  },
 };
 </script>
 

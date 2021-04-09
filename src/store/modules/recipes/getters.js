@@ -7,5 +7,8 @@ export default {
   },
   loadedRecipes(state) {
     return state.loadedRecipes;
+  },
+  shouldLoadMore(state){
+    return state.recipes.length > state.loadedRecipes.length
   }
 };
