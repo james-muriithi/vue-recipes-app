@@ -4,8 +4,9 @@
     <div v-if="isLoading" class="row justify-content-center mt-5">
       <base-spinner></base-spinner>
     </div>
-    <div class="row" v-else>
-      <div class="col-lg-8">
+    <div v-else>
+      <div class="row" v-if="recipe">
+        <div class="col-lg-8">
         <div class="margin-bottom-40px card border-0 box-shadow">
           <div v-if="recipe">
             <div class="card-img-top">
@@ -51,6 +52,8 @@
           </div>
         </div>
       </div>
+      </div>
+      <not-found v-else headerTitle="" description="The recipe you are looking for is not available!"></not-found>
     </div>
   </div>
 </template>
@@ -59,16 +62,19 @@
 import RecipeItemHeader from "../../components/recipes/RecipeItemHeader.vue";
 import RecipeIngredients from "../../components/recipes/RecipeIngredients.vue";
 import RecipeInstructions from "../../components/recipes/RecipeInstructions.vue";
+import NotFound from '../NotFound.vue';
 export default {
   props: ["id"],
   components: {
     RecipeItemHeader,
     RecipeIngredients,
-    RecipeInstructions
+    RecipeInstructions,
+    NotFound
   },
   data() {
     return {
-      isLoading: false
+      isLoading: false,
+      error: null
     };
   },
   methods: {

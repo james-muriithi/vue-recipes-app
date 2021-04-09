@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="title text-center">
-      <h2 class="font-weight-700 mb-3 text-main-color">Latest Recipes</h2>
+      <h2 class="font-weight-700 mb-4 text-main-color">Latest Recipes</h2>
       <!-- <div class="dropdown-divider mb-3">
       </div> -->
     </div>
@@ -11,17 +11,22 @@
         :key="i"
       ></recipe-item-shimmer>
     </div>
-    <div class="row" v-else>
-      <recipe-item
+    <div v-else>
+      <div v-if="recipes" class="row">
+        <recipe-item
         v-for="recipe in recipes"
         :key="recipe.id"
         :title="recipe.title"
         :id="recipe.id"
         :imgSrc="recipe.image"
       ></recipe-item>
+      </div>
+      <div class="text-center">
+        <p>No recipes were found</p>
+      </div>
     </div>
     <div class="text-center mb-4" v-if="shouldLoadMore">
-      <button @click="loadMore" class="btn btn-danger py-2 px-4 rounded-pill">Load more</button>
+      <button @click="loadMore" class="btn btn-primary py-2 px-4 rounded-pill">Load more</button>
     </div>
   </div>
 </template>
@@ -38,7 +43,7 @@ export default {
     RecipeItemShimmer,
   },
   data() {
-    return { isLoading: false, loadingDivs: new Array(15).fill(0) };
+    return { isLoading: false, loadingDivs: new Array(15).fill(0), error: null };
   },
   computed: {
     recipes() {
@@ -53,6 +58,7 @@ export default {
       try {
         await this.$store.dispatch("loadLatestRecipes", options);
       } catch (error) {
+        this.error = error.message
         console.log(error);
       }
 
