@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container pt-5">
     <div class="title text-center">
-      <h2 class="font-weight-700 mb-4 text-main-color">Latest Recipes</h2>
+      <!-- <h2 class="font-weight-700 mb-4 text-main-color">Latest Recipes</h2> -->
       <!-- <div class="dropdown-divider mb-3">
       </div> -->
     </div>
