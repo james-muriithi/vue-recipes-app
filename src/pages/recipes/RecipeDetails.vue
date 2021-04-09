@@ -1,7 +1,10 @@
 <template>
   <recipe-item-header title=""></recipe-item-header>
   <div class="container">
-    <div class="row">
+    <div v-if="isLoading" class="row justify-content-center mt-5">
+      <base-spinner></base-spinner>
+    </div>
+    <div class="row" v-else>
       <div class="col-lg-8">
         <div class="margin-bottom-40px card border-0 box-shadow">
           <div v-if="recipe">
@@ -36,6 +39,15 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="p-4 shadow" v-if="recipe.summary">
+          <h5>Summary</h5>
+          <hr>
+          <div class="text-left">
+            <p v-html="recipe.summary"></p>
           </div>
         </div>
       </div>
