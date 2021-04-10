@@ -1,6 +1,6 @@
 <template>
   <div v-if="instructions && instructions.length > 0">
-    <h3>Instructions</h3>
+    <h2 class="h5">Instructions</h2>
     <ol>
       <li v-for="instruction in instructions" :key="instruction.number">
         {{ instruction.step }}

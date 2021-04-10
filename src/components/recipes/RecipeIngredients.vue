@@ -1,6 +1,6 @@
 <template>
   <div v-if="ingredients && ingredients.length > 0">
-    <h3>Ingredients</h3>
+    <h2 class="h5">Ingredients</h2>
     <ul>
       <li v-for="ingredient in ingredients" :key="ingredient">
         {{ ingredient.name }}

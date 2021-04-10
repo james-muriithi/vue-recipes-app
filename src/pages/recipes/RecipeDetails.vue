@@ -14,13 +14,17 @@
             <div class="margin-bottom-40px card border-0 box-shadow">
               <div v-if="recipe">
                 <div class="card-img-top">
-                  <img class="img-fluid w-100" v-lazy="lazyLoadOptions" />
+                  <img
+                    class="img-fluid w-100"
+                    v-lazy="lazyLoadOptions"
+                    :alt="recipe.title"
+                  />
                 </div>
                 <div class="padding-lr-30px padding-tb-20px">
                   <div class="margin-bottom-20px margin-top-10px">
-                    <h4 class="text-dark" href="#">
+                    <h1 class="text-dark h4" href="#">
                       {{ recipe.title }}
-                    </h4>
+                    </h1>
                   </div>
                   <recipe-ingredients
                     :ingredients="recipe.extendedIngredients"
@@ -49,7 +53,7 @@
           </div>
           <div class="col-lg-4">
             <div class="p-4 shadow" v-if="recipe.summary">
-              <h5>Summary</h5>
+              <h2 class="h5">Summary</h2>
               <hr />
               <div class="text-left">
                 <p v-html="recipe.summary"></p>
