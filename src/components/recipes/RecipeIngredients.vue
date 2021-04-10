@@ -24,6 +24,7 @@ export default {
 ul {
   list-style: none;
   text-align: left;
+  padding-inline-start: 10px!important;
 }
 ul li {
   position: relative;

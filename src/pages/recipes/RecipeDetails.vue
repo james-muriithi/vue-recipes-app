@@ -1,65 +1,70 @@
 <template>
   <recipe-item-header title=""></recipe-item-header>
-  <div class="container">
-    <div v-if="isLoading" class="row justify-content-center mt-5">
-      <base-spinner></base-spinner>
-    </div>
-    <div v-else>
-      <div class="row" v-if="recipe">
-        <div class="col-lg-8">
-          <div class="margin-bottom-40px card border-0 box-shadow">
-            <div v-if="recipe">
-              <div class="card-img-top">
-                <img class="img-fluid w-100" v-lazy="lazyLoadOptions" />
-              </div>
-              <div class="padding-lr-30px padding-tb-20px">
-                <div class="margin-bottom-20px margin-top-10px">
-                  <h4 class="text-dark" href="#">
-                    {{ recipe.title }}
-                  </h4>
-                </div>
-                <recipe-ingredients
-                  :ingredients="recipe.extendedIngredients"
-                ></recipe-ingredients>
-
-                <recipe-instructions
-                  :instructions="instructions"
-                ></recipe-instructions>
-
-                <hr />
-                <div class="row no-gutters">
-                  <div class="col-4 text-left">
-                    <a href="#" class="text-red"
-                      ><i class="far fa-heart"></i> Save</a
-                    >
-                  </div>
-                  <div class="col-8 text-right">
-                    <a href="#" class="text-grey-2"
-                      ><i class="fas fa-share"></i> share</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="p-4 shadow" v-if="recipe.summary">
-            <h5>Summary</h5>
-            <hr />
-            <div class="text-left">
-              <p v-html="recipe.summary"></p>
-            </div>
-          </div>
-        </div>
+  <transition
+    enter-active-class="animate__animated animate__fadeIn"
+    leave-active-class="animate__animated animate__fadeOut"
+  >
+    <div class="container">
+      <div v-if="isLoading" class="row justify-content-center mt-5">
+        <base-spinner></base-spinner>
       </div>
-      <not-found
-        v-else
-        headerTitle=""
-        description="The recipe you are looking for is not available!"
-      ></not-found>
+      <div v-else>
+        <div class="row" v-if="recipe">
+          <div class="col-lg-8">
+            <div class="margin-bottom-40px card border-0 box-shadow">
+              <div v-if="recipe">
+                <div class="card-img-top">
+                  <img class="img-fluid w-100" v-lazy="lazyLoadOptions" />
+                </div>
+                <div class="padding-lr-30px padding-tb-20px">
+                  <div class="margin-bottom-20px margin-top-10px">
+                    <h4 class="text-dark" href="#">
+                      {{ recipe.title }}
+                    </h4>
+                  </div>
+                  <recipe-ingredients
+                    :ingredients="recipe.extendedIngredients"
+                  ></recipe-ingredients>
+
+                  <recipe-instructions
+                    :instructions="instructions"
+                  ></recipe-instructions>
+
+                  <hr />
+                  <div class="row no-gutters">
+                    <div class="col-4 text-left">
+                      <a href="#" class="text-red"
+                        ><i class="far fa-heart"></i> Save</a
+                      >
+                    </div>
+                    <div class="col-8 text-right">
+                      <a href="#" class="text-grey-2"
+                        ><i class="fas fa-share"></i> share</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="p-4 shadow" v-if="recipe.summary">
+              <h5>Summary</h5>
+              <hr />
+              <div class="text-left">
+                <p v-html="recipe.summary"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <not-found
+          v-else
+          headerTitle=""
+          description="The recipe you are looking for is not available!"
+        ></not-found>
+      </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -73,12 +78,12 @@ export default {
     RecipeItemHeader,
     RecipeIngredients,
     RecipeInstructions,
-    NotFound
+    NotFound,
   },
   data() {
     return {
       isLoading: false,
-      error: null
+      error: null,
     };
   },
   methods: {
@@ -91,7 +96,7 @@ export default {
         console.log(error);
       }
       this.isLoading = false;
-    }
+    },
   },
   computed: {
     recipe() {
@@ -101,7 +106,7 @@ export default {
       return {
         src: this.recipe.image,
         loading: require("../../assets/fast-food.svg"),
-        error: require("../../assets/fast-food.svg")
+        error: require("../../assets/fast-food.svg"),
       };
     },
     instructions() {
@@ -113,12 +118,19 @@ export default {
         instructions = this.recipe.analyzedInstructions[0].steps;
       }
       return instructions;
-    }
+    },
   },
   created() {
     this.loadRecipe();
-  }
+  },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+@media screen and (max-width: 476px) {
+  .padding-lr-30px {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+</style>

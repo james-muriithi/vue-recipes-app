@@ -26,6 +26,7 @@ export default {
 <style scoped>
 ol {
   text-align: left;
+  padding-inline-start: 10px;
 }
 ol li {
   line-height: 28px;
