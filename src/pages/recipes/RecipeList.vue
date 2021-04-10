@@ -47,13 +47,13 @@ export default {
   name: "App",
   components: {
     RecipeItem,
-    RecipeItemShimmer,
+    RecipeItemShimmer
   },
   data() {
     return {
       isLoading: false,
       loadingDivs: new Array(15).fill(0),
-      error: null,
+      error: null
     };
   },
   computed: {
@@ -61,7 +61,7 @@ export default {
       console.log(this.$store.getters.loadedRecipes.length);
       return this.$store.getters.loadedRecipes;
     },
-    ...mapGetters(["shouldLoadMore"]),
+    ...mapGetters(["shouldLoadMore"])
   },
   methods: {
     async loadLatestRecipes(options) {
@@ -75,11 +75,11 @@ export default {
 
       this.isLoading = false;
     },
-    ...mapActions(["loadMore"]),
+    ...mapActions(["loadMore"])
   },
   created() {
     this.loadLatestRecipes({ forceReload: false });
-  },
+  }
 };
 </script>
 

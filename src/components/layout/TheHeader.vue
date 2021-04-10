@@ -6,11 +6,13 @@
     </div>
     <div class="nav-right">
       <div class="md-search-bar">
-        <i class="material-icons search-icon">search</i>
+        <i class="material-icons search-icon" ref="search" @click="openSearch"
+          >search</i
+        >
         <div class="md-search-bar-input">
           <input class="md-input-text" type="text" placeholder="Search" />
           <div class="md-bar"></div>
-          <i class="material-icons">close</i>
+          <i class="material-icons" @click="closeSearch">close</i>
         </div>
       </div>
     </div>
@@ -18,6 +20,24 @@
   </header>
 </template>
 
+<script>
+export default {
+  methods: {
+    openSearch() {
+      if (event) {
+        event.target.parentElement.classList.add("focus");
+        event.target.classList.add("d-none");
+      }
+    },
+    closeSearch() {
+      if (event) {
+        event.target.parentElement.parentElement.classList.remove("focus");
+        this.$refs.search.classList.remove("d-none");
+      }
+    }
+  }
+};
+</script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 .py-1-half {
@@ -54,6 +74,7 @@
 }
 .md-header .md-search-bar .search-icon {
   padding: 0 15px;
+  transition: display 1s ease-in;
 }
 .md-header .md-search-bar i.material-icons {
   color: #fff;

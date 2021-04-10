@@ -63,7 +63,10 @@ export default {
           ? allRecipes.length
           : loadedRecipes.length + parseInt(context.state.pagination);
 
-      context.commit("addLoadedRecipes", allRecipes.slice(loadedRecipes.length, newLoadedRecipes));
+      context.commit(
+        "addLoadedRecipes",
+        allRecipes.slice(loadedRecipes.length, newLoadedRecipes)
+      );
     }
   }
 };

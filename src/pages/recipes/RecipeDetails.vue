@@ -78,12 +78,12 @@ export default {
     RecipeItemHeader,
     RecipeIngredients,
     RecipeInstructions,
-    NotFound,
+    NotFound
   },
   data() {
     return {
       isLoading: false,
-      error: null,
+      error: null
     };
   },
   methods: {
@@ -96,7 +96,7 @@ export default {
         console.log(error);
       }
       this.isLoading = false;
-    },
+    }
   },
   computed: {
     recipe() {
@@ -106,7 +106,7 @@ export default {
       return {
         src: this.recipe.image,
         loading: require("../../assets/fast-food.svg"),
-        error: require("../../assets/fast-food.svg"),
+        error: require("../../assets/fast-food.svg")
       };
     },
     instructions() {
@@ -118,11 +118,11 @@ export default {
         instructions = this.recipe.analyzedInstructions[0].steps;
       }
       return instructions;
-    },
+    }
   },
   created() {
     this.loadRecipe();
-  },
+  }
 };
 </script>
 

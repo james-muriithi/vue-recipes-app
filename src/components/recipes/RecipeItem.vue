@@ -42,26 +42,26 @@ export default {
   props: {
     imgSrc: {
       type: String,
-      default: require("../../assets/fast-food.svg"),
+      default: require("../../assets/fast-food.svg")
     },
     title: {
       type: String,
-      required: true,
+      required: true
     },
     id: {
       type: Number,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
     lazyLoadOptions() {
       return {
         src: this.imgSrc,
         loading: require("../../assets/fast-food.svg"),
-        error: require("../../assets/fast-food.svg"),
+        error: require("../../assets/fast-food.svg")
       };
-    },
-  },
+    }
+  }
 };
 </script>
 
