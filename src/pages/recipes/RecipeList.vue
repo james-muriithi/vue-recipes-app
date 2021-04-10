@@ -13,13 +13,18 @@
     </div>
     <div v-else>
       <div v-if="recipes" class="row">
-        <recipe-item
-          v-for="recipe in recipes"
-          :key="recipe.id"
-          :title="recipe.title"
-          :id="recipe.id"
-          :imgSrc="recipe.image"
-        ></recipe-item>
+        <transition-group
+          enter-active-class="animate__animated animate__fadeIn"
+          leave-active-class="animate__animated animate__fadeOut"
+        >
+          <recipe-item
+            v-for="recipe in recipes"
+            :key="recipe.id"
+            :title="recipe.title"
+            :id="recipe.id"
+            :imgSrc="recipe.image"
+          ></recipe-item>
+        </transition-group>
       </div>
       <div class="text-center" v-else>
         <p>No recipes found</p>
@@ -42,13 +47,13 @@ export default {
   name: "App",
   components: {
     RecipeItem,
-    RecipeItemShimmer
+    RecipeItemShimmer,
   },
   data() {
     return {
       isLoading: false,
       loadingDivs: new Array(15).fill(0),
-      error: null
+      error: null,
     };
   },
   computed: {
@@ -56,7 +61,7 @@ export default {
       console.log(this.$store.getters.loadedRecipes.length);
       return this.$store.getters.loadedRecipes;
     },
-    ...mapGetters(["shouldLoadMore"])
+    ...mapGetters(["shouldLoadMore"]),
   },
   methods: {
     async loadLatestRecipes(options) {
@@ -70,11 +75,11 @@ export default {
 
       this.isLoading = false;
     },
-    ...mapActions(["loadMore"])
+    ...mapActions(["loadMore"]),
   },
   created() {
     this.loadLatestRecipes({ forceReload: false });
-  }
+  },
 };
 </script>
 

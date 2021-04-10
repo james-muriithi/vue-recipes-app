@@ -1,6 +1,5 @@
 <template>
-  <transition name="fade">
-    <div class="col-xl-3 col-lg-4 col-sm-6 p-0">
+  <div class="col-xl-3 col-lg-4 col-sm-6 p-0">
     <div class="recipe-item margin-bottom-40px shadow-box mx-2">
       <div class="card border-0">
         <div class="card-img-top">
@@ -27,7 +26,6 @@
       </div>
     </div>
   </div>
-  </transition>
 </template>
 
 <script>
@@ -35,26 +33,26 @@ export default {
   props: {
     imgSrc: {
       type: String,
-      default: require("../../assets/fast-food.svg")
+      default: require("../../assets/fast-food.svg"),
     },
     title: {
       type: String,
-      required: true
+      required: true,
     },
     id: {
       type: Number,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
     lazyLoadOptions() {
       return {
         src: this.imgSrc,
         loading: require("../../assets/fast-food.svg"),
-        error: require("../../assets/fast-food.svg")
+        error: require("../../assets/fast-food.svg"),
       };
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -102,13 +100,6 @@ a {
 }
 a.text-black:hover {
   color: #ff4136;
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
 }
 
 @media screen and (max-width: 576px) {
