@@ -18,6 +18,6 @@ app.use(router);
 app.use(store);
 app.use(VueLazyLoad);
 app.component("base-spinner", BaseSpinner);
-app.Aos = AOS.init({ disable: 'mobile' });
+app.Aos = AOS.init({ disable: "mobile" });
 
 app.mount("#app");

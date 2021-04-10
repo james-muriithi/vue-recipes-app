@@ -26,38 +26,40 @@
 </template>
 
 <script>
-import _ from 'lodash'
+import _ from "lodash";
 export default {
   data() {
     return {
-      query: "",
+      query: ""
     };
   },
   methods: {
     openSearch() {
       if (event) {
         event.target.parentElement.classList.add("focus");
+        event.target.parentElement.querySelector("input").focus();
         event.target.classList.add("d-none");
       }
     },
     closeSearch() {
       if (event) {
         event.target.parentElement.parentElement.classList.remove("focus");
+        // this.query = '';
         this.$refs.search.classList.remove("d-none");
       }
     },
     searchRecipes() {
       console.log(this.query);
       // this.$store.dispatch("SEARCH_PRODUCTS", this.query);
-    },
+    }
   },
   watch: {
     query: {
-      handler: _.debounce(function () {
+      handler: _.debounce(function() {
         this.searchRecipes();
-      }, 1000),
-    },
-  },
+      }, 1000)
+    }
+  }
 };
 </script>
 <style scoped>
@@ -230,6 +232,30 @@ export default {
   .material-icons.search-icon {
     padding-right: 8px;
     padding-left: 8px;
+  }
+  .md-header .md-search-bar .md-search-bar-input {
+    font-size: 13px;
+  }
+
+  .md-header .md-search-bar i {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .md-header .brand {
+    font-size: 14px;
+    padding-left: 8px;
+  }
+  .md-header .md-search-bar {
+    margin-right: 5px;
+  }
+  .material-icons.search-icon {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .md-header .md-search-bar .md-search-bar-input {
+    width: 140px;
   }
 }
 </style>
