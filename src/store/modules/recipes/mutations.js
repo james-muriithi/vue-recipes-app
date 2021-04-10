@@ -7,5 +7,8 @@ export default {
   },
   setSelectedRecipe(state, recipe) {
     state.selectedRecipe = recipe;
-  }
+  },
+  addLoadedRecipes(state, recipes){
+    state.loadedRecipes.push(...recipes)
+  },
 };

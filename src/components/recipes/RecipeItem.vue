@@ -1,5 +1,6 @@
 <template>
-  <div class="col-xl-3 col-lg-4 col-sm-6 p-0">
+  <transition name="fade">
+    <div class="col-xl-3 col-lg-4 col-sm-6 p-0">
     <div class="recipe-item margin-bottom-40px shadow-box mx-2">
       <div class="card border-0">
         <div class="card-img-top">
@@ -26,6 +27,7 @@
       </div>
     </div>
   </div>
+  </transition>
 </template>
 
 <script>
@@ -102,15 +104,22 @@ a.text-black:hover {
   color: #ff4136;
 }
 
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
 @media screen and (max-width: 576px) {
   .card-img-top img {
-    max-height: 270px;
+    max-height: 260px;
   }
 }
 
 @media screen and (min-width: 576px) {
   .card-img-top img {
-    max-height: 230px !important;
+    height: 230px !important;
   }
 }
 </style>
