@@ -10,7 +10,12 @@
           >search</i
         >
         <div class="md-search-bar-input">
-          <input class="md-input-text" type="text" placeholder="Search" />
+          <input
+            class="md-input-text"
+            v-model.trim="query"
+            type="text"
+            placeholder="Search"
+          />
           <div class="md-bar"></div>
           <i class="material-icons" @click="closeSearch">close</i>
         </div>
@@ -21,7 +26,13 @@
 </template>
 
 <script>
+import _ from 'lodash'
 export default {
+  data() {
+    return {
+      query: "",
+    };
+  },
   methods: {
     openSearch() {
       if (event) {
@@ -34,8 +45,19 @@ export default {
         event.target.parentElement.parentElement.classList.remove("focus");
         this.$refs.search.classList.remove("d-none");
       }
-    }
-  }
+    },
+    searchRecipes() {
+      console.log(this.query);
+      // this.$store.dispatch("SEARCH_PRODUCTS", this.query);
+    },
+  },
+  watch: {
+    query: {
+      handler: _.debounce(function () {
+        this.searchRecipes();
+      }, 1000),
+    },
+  },
 };
 </script>
 <style scoped>
