@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import RecipeList from "./pages/recipes/RecipeList.vue";
-import NotFound from "./pages/NotFound.vue";
 
 const RecipeDetails = () => import("./pages/recipes/RecipeDetails.vue");
+const NotFound = () => import("./pages/NotFound.vue");
 
 const router = createRouter({
   history: createWebHistory(),

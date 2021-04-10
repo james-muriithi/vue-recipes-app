@@ -9,8 +9,8 @@
       <div class="recipe-item margin-bottom-40px shadow-box mx-2">
         <div class="card border-0">
           <div class="card-img-top">
-            <a :href="`recipes/${id}`" aria-label="{{ title }}">
-              <img class="img-fluid w-100" v-lazy="lazyLoadOptions" alt="{{ title }}" />
+            <a :href="`recipes/${id}`" :aria-label="title">
+              <img class="img-fluid w-100" v-lazy="lazyLoadOptions" :alt="title" />
             </a>
           </div>
           <div class="padding-lr-20px padding-tb-20px">
