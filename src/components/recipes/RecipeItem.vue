@@ -1,25 +1,34 @@
 <template>
   <div class="col-xl-3 col-lg-4 col-sm-6 p-0">
-    <div class="recipe-item margin-bottom-40px shadow-box mx-2">
-      <div class="card border-0">
-        <div class="card-img-top">
-          <a :href="`recipes/${id}`">
-            <img class="img-fluid w-100" v-lazy="lazyLoadOptions" />
-          </a>
-        </div>
-        <div class="padding-lr-20px padding-tb-20px">
-          <h5 class="margin-bottom-20px margin-top-10px">
-            <a class="text-black" :href="`recipes/${id}`">{{ title }}</a>
-          </h5>
-          <hr />
-          <div class="row no-gutters">
-            <div class="col-4 text-left">
-              <a href="#" class="text-red"><i class="far fa-heart"></i> Save</a>
-            </div>
-            <div class="col-8 text-right">
-              <a href="#" class="text-grey-2"
-                ><i class="fas fa-share"></i> share</a
-              >
+    <div
+      data-aos="fade"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
+      <div class="recipe-item margin-bottom-40px shadow-box mx-2">
+        <div class="card border-0">
+          <div class="card-img-top">
+            <a :href="`recipes/${id}`">
+              <img class="img-fluid w-100" v-lazy="lazyLoadOptions" />
+            </a>
+          </div>
+          <div class="padding-lr-20px padding-tb-20px">
+            <h5 class="margin-bottom-20px margin-top-10px">
+              <a class="text-black" :href="`recipes/${id}`">{{ title }}</a>
+            </h5>
+            <hr />
+            <div class="row no-gutters">
+              <div class="col-4 text-left">
+                <a href="#" class="text-red"
+                  ><i class="far fa-heart"></i> Save</a
+                >
+              </div>
+              <div class="col-8 text-right">
+                <a href="#" class="text-grey-2"
+                  ><i class="fas fa-share"></i> share</a
+                >
+              </div>
             </div>
           </div>
         </div>

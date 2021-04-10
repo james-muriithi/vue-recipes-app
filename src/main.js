@@ -4,6 +4,8 @@ import VueLazyLoad from "vue3-lazyload";
 import "bootstrap";
 import 'animate.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'aos/dist/aos.css';
+import AOS from "aos";
 
 import BaseSpinner from "./components/ui/BaseSpinner.vue";
 
@@ -16,5 +18,6 @@ app.use(router);
 app.use(store);
 app.use(VueLazyLoad);
 app.component("base-spinner", BaseSpinner);
+app.Aos = AOS.init({disable: false});
 
 app.mount("#app");
