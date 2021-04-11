@@ -83,5 +83,23 @@ export default {
   loadFavouriteRecipes(context) {
     const recipes = getFavouriteRecipes();
     context.commit("setFavouriteRecipes", recipes);
+  },
+  shareRecipe(_, payload) {
+    const title = payload.title,
+      url = payload.url,
+      text = payload.text || "";
+
+    if (navigator.share) {
+      navigator
+        .share({
+          url,
+          title,
+          text
+        })
+        .then(() => console.log("Successful share"))
+        .catch(error => console.log("Error sharing", error));
+    } else {
+      console.log("share not supported");
+    }
   }
 };

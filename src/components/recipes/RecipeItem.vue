@@ -33,7 +33,7 @@
                 >
               </div>
               <div class="col-8 text-right">
-                <a href="#" class="text-grey-2"
+                <a href="#" class="text-grey-2" @click.prevent="shareRecipe()"
                   ><i class="fas fa-share"></i> share</a
                 >
               </div>
@@ -76,6 +76,14 @@ export default {
   methods: {
     saveRecipeAsFavourite(id) {
       this.$store.dispatch("saveRecipeAsFavourite", { id });
+    },
+    shareRecipe() {
+      console.log(window.location.href);
+      this.$store.dispatch("shareRecipe", {
+        url: window.location.href,
+        title: this.title,
+        text: ""
+      });
     }
   }
 };
