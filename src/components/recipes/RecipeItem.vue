@@ -25,7 +25,7 @@
             <div class="row no-gutters">
               <div class="col-4 text-left">
                 <a href="#" class="text-red"
-                  ><i class="far fa-heart"></i> Save</a
+                  ><i :class="favourite ? 'far fa-heart': 'fas fa-heart'"></i> Save</a
                 >
               </div>
               <div class="col-8 text-right">
@@ -55,6 +55,10 @@ export default {
     id: {
       type: Number,
       required: true
+    },
+    favourite: {
+      type: Boolean,
+      default: false,
     }
   },
   computed: {

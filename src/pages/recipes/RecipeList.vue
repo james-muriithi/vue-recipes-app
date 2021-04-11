@@ -53,7 +53,7 @@ export default {
     return {
       isLoading: false,
       loadingDivs: new Array(15).fill(0),
-      error: null
+      error: null,
     };
   },
   computed: {
@@ -61,7 +61,7 @@ export default {
       console.log(this.$store.getters.loadedRecipes.length);
       return this.$store.getters.loadedRecipes;
     },
-    ...mapGetters(["shouldLoadMore"])
+    ...mapGetters(["shouldLoadMore", "favouriteRecipes"])
   },
   methods: {
     async loadLatestRecipes(options) {

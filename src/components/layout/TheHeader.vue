@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import _ from "lodash";
+// import _ from "lodash";
 export default {
   data() {
     return {
@@ -53,13 +53,13 @@ export default {
       // this.$store.dispatch("SEARCH_PRODUCTS", this.query);
     }
   },
-  watch: {
-    query: {
-      handler: _.debounce(function() {
-        this.searchRecipes();
-      }, 1000)
-    }
-  }
+  // watch: {
+  //   query: {
+  //     handler: _.debounce(function() {
+  //       this.searchRecipes();
+  //     }, 1000)
+  //   }
+  // }
 };
 </script>
 <style scoped>
@@ -238,7 +238,7 @@ export default {
   }
 
   .md-header .md-search-bar i {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 

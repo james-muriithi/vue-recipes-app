@@ -8,7 +8,8 @@ export default {
       recipes: [],
       pagination: 20,
       loadedRecipes: [],
-      selectedRecipe: null
+      selectedRecipe: null,
+      favouriteRecipes: [], 
     };
   },
   mutations,

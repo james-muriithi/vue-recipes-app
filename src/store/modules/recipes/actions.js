@@ -4,7 +4,9 @@ import {
   getLocalRecipes,
   getLocalRecipe,
   saveRecipe,
-  fetchRecipe
+  fetchRecipe,
+  saveFavouriteRecipes,
+  getFavouriteRecipes
 } from "../../../helpers/Recipes.js";
 export default {
   async loadLatestRecipes(context, payload) {
@@ -68,5 +70,17 @@ export default {
         allRecipes.slice(loadedRecipes.length, newLoadedRecipes)
       );
     }
+  },
+  saveRecipeAsFavourite(context, payload){
+    if(context.state.favouriteRecipes.find(id => id == payload.id)){
+      context.commit('addFavouriteRecipe', payload.id);
+    }else{
+      context.commit('removeFavouriteRecipe', payload.id);
+    }
+    saveFavouriteRecipes(context.state.favouriteRecipes);
+  },
+  loadFavouriteRecipes(context){
+    const recipes = getFavouriteRecipes()
+    context.commit('setFavouriteRecipes', recipes);
   }
 };

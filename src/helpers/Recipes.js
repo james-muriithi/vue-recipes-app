@@ -25,6 +25,14 @@ function getLocalRecipe(recipeId) {
   return localStorage.getItem(recipeId);
 }
 
+function saveFavouriteRecipes(recipes){
+  localStorage.setItem('favourites', recipes);
+}
+
+function getFavouriteRecipes(){
+  return localStorage.getItem('favourites') || [];
+}
+
 async function fetchRecipe(recipeId) {
   const url = `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=21d1863b6aad44b492d77e877d2b6c06&includeNutrition=false`;
   const response = await fetch(url);
@@ -42,5 +50,7 @@ export {
   fetchRecipes,
   saveRecipe,
   getLocalRecipe,
-  fetchRecipe
+  fetchRecipe,
+  saveFavouriteRecipes,
+  getFavouriteRecipes
 };
