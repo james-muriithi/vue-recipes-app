@@ -24,8 +24,12 @@
             <hr />
             <div class="row no-gutters">
               <div class="col-4 text-left">
-                <a href="#" class="text-red"
-                  ><i :class="favourite ? 'far fa-heart': 'fas fa-heart'"></i> Save</a
+                <a
+                  href="#"
+                  :class="favourite ? 'text-red' : 'text-grey'"
+                  @click.prevent="saveRecipeAsFavourite(id)"
+                  ><i :class="favourite ? 'fas fa-heart' : 'far fa-heart'"></i>
+                  Save</a
                 >
               </div>
               <div class="col-8 text-right">
@@ -46,30 +50,34 @@ export default {
   props: {
     imgSrc: {
       type: String,
-      default: require("../../assets/fast-food.svg")
+      default: require("../../assets/fast-food.svg"),
     },
     title: {
       type: String,
-      required: true
+      required: true,
     },
     id: {
       type: Number,
-      required: true
+      required: true,
     },
-    favourite: {
-      type: Boolean,
-      default: false,
-    }
   },
   computed: {
     lazyLoadOptions() {
       return {
         src: this.imgSrc,
         loading: require("../../assets/fast-food.svg"),
-        error: require("../../assets/fast-food.svg")
+        error: require("../../assets/fast-food.svg"),
       };
+    },
+    favourite(){
+      return this.$store.getters.favouriteRecipes.includes(this.id);
     }
-  }
+  },
+  methods: {
+    saveRecipeAsFavourite(id){
+      this.$store.dispatch('saveRecipeAsFavourite', {id})
+    },
+  },
 };
 </script>
 
@@ -117,6 +125,10 @@ a {
 }
 a.text-black:hover {
   color: #ff4136;
+}
+
+.text-grey {
+  color: rgb(106, 115, 124);
 }
 
 @media screen and (max-width: 576px) {

@@ -15,7 +15,7 @@ export default {
     state.favouriteRecipes.unshift(recipeId)
   },
   removeFavouriteRecipe(state, recipeId){
-    state.favouriteRecipes.filter(id => id != recipeId)
+    state.favouriteRecipes = state.favouriteRecipes.filter(id => id != recipeId)
   },
   setFavouriteRecipes(state, recipes) {
     state.favouriteRecipes = recipes;

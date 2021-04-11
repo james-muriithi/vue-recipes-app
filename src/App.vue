@@ -53,6 +53,6 @@ export default {
 }
 
 .text-red {
-  color: #e91e63;
+  color: #e91e63!important;
 }
 </style>

@@ -26,11 +26,11 @@ function getLocalRecipe(recipeId) {
 }
 
 function saveFavouriteRecipes(recipes){
-  localStorage.setItem('favourites', recipes);
+  localStorage.setItem('favourites', JSON.stringify(recipes));
 }
 
 function getFavouriteRecipes(){
-  return localStorage.getItem('favourites') || [];
+  return JSON.parse(localStorage.getItem('favourites')) || [];
 }
 
 async function fetchRecipe(recipeId) {

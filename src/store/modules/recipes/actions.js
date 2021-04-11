@@ -72,11 +72,12 @@ export default {
     }
   },
   saveRecipeAsFavourite(context, payload){
-    if(context.state.favouriteRecipes.find(id => id == payload.id)){
+    if(!context.state.favouriteRecipes.find(id => id == payload.id)){
       context.commit('addFavouriteRecipe', payload.id);
     }else{
       context.commit('removeFavouriteRecipe', payload.id);
     }
+
     saveFavouriteRecipes(context.state.favouriteRecipes);
   },
   loadFavouriteRecipes(context){
