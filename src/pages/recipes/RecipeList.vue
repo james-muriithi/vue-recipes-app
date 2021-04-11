@@ -53,7 +53,7 @@ export default {
     return {
       isLoading: false,
       loadingDivs: new Array(15).fill(0),
-      error: null,
+      error: null
     };
   },
   computed: {

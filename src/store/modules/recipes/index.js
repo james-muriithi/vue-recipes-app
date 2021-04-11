@@ -9,7 +9,7 @@ export default {
       pagination: 20,
       loadedRecipes: [],
       selectedRecipe: null,
-      favouriteRecipes: [], 
+      favouriteRecipes: []
     };
   },
   mutations,

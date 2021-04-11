@@ -52,7 +52,7 @@ export default {
       console.log(this.query);
       // this.$store.dispatch("SEARCH_PRODUCTS", this.query);
     }
-  },
+  }
   // watch: {
   //   query: {
   //     handler: _.debounce(function() {

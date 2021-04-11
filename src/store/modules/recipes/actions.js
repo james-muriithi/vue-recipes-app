@@ -71,17 +71,17 @@ export default {
       );
     }
   },
-  saveRecipeAsFavourite(context, payload){
-    if(!context.state.favouriteRecipes.find(id => id == payload.id)){
-      context.commit('addFavouriteRecipe', payload.id);
-    }else{
-      context.commit('removeFavouriteRecipe', payload.id);
+  saveRecipeAsFavourite(context, payload) {
+    if (!context.state.favouriteRecipes.find(id => id == payload.id)) {
+      context.commit("addFavouriteRecipe", payload.id);
+    } else {
+      context.commit("removeFavouriteRecipe", payload.id);
     }
 
     saveFavouriteRecipes(context.state.favouriteRecipes);
   },
-  loadFavouriteRecipes(context){
-    const recipes = getFavouriteRecipes()
-    context.commit('setFavouriteRecipes', recipes);
+  loadFavouriteRecipes(context) {
+    const recipes = getFavouriteRecipes();
+    context.commit("setFavouriteRecipes", recipes);
   }
 };

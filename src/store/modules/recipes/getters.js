@@ -11,7 +11,7 @@ export default {
   shouldLoadMore(state) {
     return state.recipes.length > state.loadedRecipes.length;
   },
-  favouriteRecipes(state){
+  favouriteRecipes(state) {
     return state.favouriteRecipes;
   }
 };

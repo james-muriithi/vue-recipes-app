@@ -25,12 +25,12 @@ function getLocalRecipe(recipeId) {
   return localStorage.getItem(recipeId);
 }
 
-function saveFavouriteRecipes(recipes){
-  localStorage.setItem('favourites', JSON.stringify(recipes));
+function saveFavouriteRecipes(recipes) {
+  localStorage.setItem("favourites", JSON.stringify(recipes));
 }
 
-function getFavouriteRecipes(){
-  return JSON.parse(localStorage.getItem('favourites')) || [];
+function getFavouriteRecipes() {
+  return JSON.parse(localStorage.getItem("favourites")) || [];
 }
 
 async function fetchRecipe(recipeId) {

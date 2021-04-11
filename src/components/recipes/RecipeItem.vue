@@ -29,11 +29,13 @@
                   :class="favourite ? 'text-red' : 'text-grey'"
                   @click.prevent="saveRecipeAsFavourite(id)"
                   ><i :class="favourite ? 'fas fa-heart' : 'far fa-heart'"></i>
-                  Save</a>
+                  Save</a
+                >
               </div>
               <div class="col-8 text-right">
                 <a href="#" class="text-grey-2"
-                  ><i class="fas fa-share"></i> share</a>
+                  ><i class="fas fa-share"></i> share</a
+                >
               </div>
             </div>
           </div>
@@ -48,34 +50,34 @@ export default {
   props: {
     imgSrc: {
       type: String,
-      default: require("../../assets/fast-food.svg"),
+      default: require("../../assets/fast-food.svg")
     },
     title: {
       type: String,
-      required: true,
+      required: true
     },
     id: {
       type: Number,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
     lazyLoadOptions() {
       return {
         src: this.imgSrc,
         loading: require("../../assets/fast-food.svg"),
-        error: require("../../assets/fast-food.svg"),
+        error: require("../../assets/fast-food.svg")
       };
     },
-    favourite(){
+    favourite() {
       return this.$store.getters.favouriteRecipes.includes(this.id);
     }
   },
   methods: {
-    saveRecipeAsFavourite(id){
-      this.$store.dispatch('saveRecipeAsFavourite', {id})
-    },
-  },
+    saveRecipeAsFavourite(id) {
+      this.$store.dispatch("saveRecipeAsFavourite", { id });
+    }
+  }
 };
 </script>
 

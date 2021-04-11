@@ -88,12 +88,12 @@ export default {
     RecipeItemHeader,
     RecipeIngredients,
     RecipeInstructions,
-    NotFound,
+    NotFound
   },
   data() {
     return {
       isLoading: false,
-      error: null,
+      error: null
     };
   },
   methods: {
@@ -109,7 +109,7 @@ export default {
     },
     saveRecipeAsFavourite(id) {
       this.$store.dispatch("saveRecipeAsFavourite", { id });
-    },
+    }
   },
   computed: {
     recipe() {
@@ -119,7 +119,7 @@ export default {
       return {
         src: this.recipe.image,
         loading: require("../../assets/fast-food.svg"),
-        error: require("../../assets/fast-food.svg"),
+        error: require("../../assets/fast-food.svg")
       };
     },
     instructions() {
@@ -134,16 +134,16 @@ export default {
     },
     favourite() {
       return this.$store.getters.favouriteRecipes.includes(parseInt(this.id));
-    },
+    }
   },
   created() {
     this.loadRecipe();
-  },
+  }
 };
 </script>
 
 <style scoped>
-a{
+a {
   text-decoration: none;
 }
 .text-grey {

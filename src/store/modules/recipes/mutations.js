@@ -11,13 +11,15 @@ export default {
   addLoadedRecipes(state, recipes) {
     state.loadedRecipes.push(...recipes);
   },
-  addFavouriteRecipe(state, recipeId){
-    state.favouriteRecipes.unshift(recipeId)
+  addFavouriteRecipe(state, recipeId) {
+    state.favouriteRecipes.unshift(recipeId);
   },
-  removeFavouriteRecipe(state, recipeId){
-    state.favouriteRecipes = state.favouriteRecipes.filter(id => id != recipeId)
+  removeFavouriteRecipe(state, recipeId) {
+    state.favouriteRecipes = state.favouriteRecipes.filter(
+      id => id != recipeId
+    );
   },
   setFavouriteRecipes(state, recipes) {
     state.favouriteRecipes = recipes;
-  },
+  }
 };

@@ -12,8 +12,8 @@ export default {
   components: {
     TheHeader
   },
-  created(){
-    this.$store.dispatch('loadFavouriteRecipes');
+  created() {
+    this.$store.dispatch("loadFavouriteRecipes");
   }
 };
 </script>
@@ -53,6 +53,6 @@ export default {
 }
 
 .text-red {
-  color: #e91e63!important;
+  color: #e91e63 !important;
 }
 </style>
