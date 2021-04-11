@@ -37,8 +37,14 @@
                   <hr />
                   <div class="row no-gutters">
                     <div class="col-4 text-left">
-                      <a href="#" class="text-red"
-                        ><i class="far fa-heart"></i> Save</a
+                      <a
+                        href="#"
+                        :class="favourite ? 'text-red' : 'text-grey'"
+                        @click.prevent="saveRecipeAsFavourite(parseInt(id))"
+                        ><i
+                          :class="favourite ? 'fas fa-heart' : 'far fa-heart'"
+                        ></i>
+                        Save</a
                       >
                     </div>
                     <div class="col-8 text-right">
@@ -82,12 +88,12 @@ export default {
     RecipeItemHeader,
     RecipeIngredients,
     RecipeInstructions,
-    NotFound
+    NotFound,
   },
   data() {
     return {
       isLoading: false,
-      error: null
+      error: null,
     };
   },
   methods: {
@@ -100,7 +106,10 @@ export default {
         console.log(error);
       }
       this.isLoading = false;
-    }
+    },
+    saveRecipeAsFavourite(id) {
+      this.$store.dispatch("saveRecipeAsFavourite", { id });
+    },
   },
   computed: {
     recipe() {
@@ -110,7 +119,7 @@ export default {
       return {
         src: this.recipe.image,
         loading: require("../../assets/fast-food.svg"),
-        error: require("../../assets/fast-food.svg")
+        error: require("../../assets/fast-food.svg"),
       };
     },
     instructions() {
@@ -122,15 +131,24 @@ export default {
         instructions = this.recipe.analyzedInstructions[0].steps;
       }
       return instructions;
-    }
+    },
+    favourite() {
+      return this.$store.getters.favouriteRecipes.includes(parseInt(this.id));
+    },
   },
   created() {
     this.loadRecipe();
-  }
+  },
 };
 </script>
 
 <style scoped>
+a{
+  text-decoration: none;
+}
+.text-grey {
+  color: rgb(106, 115, 124);
+}
 @media screen and (max-width: 476px) {
   .padding-lr-30px {
     padding-left: 8px;

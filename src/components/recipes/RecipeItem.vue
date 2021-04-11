@@ -29,13 +29,11 @@
                   :class="favourite ? 'text-red' : 'text-grey'"
                   @click.prevent="saveRecipeAsFavourite(id)"
                   ><i :class="favourite ? 'fas fa-heart' : 'far fa-heart'"></i>
-                  Save</a
-                >
+                  Save</a>
               </div>
               <div class="col-8 text-right">
                 <a href="#" class="text-grey-2"
-                  ><i class="fas fa-share"></i> share</a
-                >
+                  ><i class="fas fa-share"></i> share</a>
               </div>
             </div>
           </div>
