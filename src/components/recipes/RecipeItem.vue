@@ -4,6 +4,7 @@
       data-aos="fade"
       data-aos-delay="50"
       data-aos-duration="1000"
+      data-aos-offset="0"
       data-aos-easing="ease-in-out"
     >
       <div class="recipe-item margin-bottom-40px shadow-box mx-2">
