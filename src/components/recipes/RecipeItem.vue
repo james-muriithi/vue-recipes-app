@@ -78,9 +78,8 @@ export default {
       this.$store.dispatch("saveRecipeAsFavourite", { id });
     },
     shareRecipe() {
-      console.log(window.location.href);
       this.$store.dispatch("shareRecipe", {
-        url: window.location.href,
+        url: `${window.location.href}recipes/${this.id}`,
         title: this.title,
         text: ""
       });
