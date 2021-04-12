@@ -6,7 +6,8 @@ import {
   saveRecipe,
   fetchRecipe,
   saveFavouriteRecipes,
-  getFavouriteRecipes
+  getFavouriteRecipes,
+  searchRecipes
 } from "../../../helpers/Recipes.js";
 export default {
   async loadLatestRecipes(context, payload) {
@@ -40,6 +41,7 @@ export default {
         context.state.pagination
       )
     );
+    // console.log(context.state.recipes);
   },
   async loadRecipe(context, payload) {
     const savedRecipe = JSON.parse(getLocalRecipe(payload.id));
@@ -100,6 +102,26 @@ export default {
         .catch(error => console.log("Error sharing", error));
     } else {
       console.log("share not supported");
+    }
+  },
+  async searchRecipe(context, payload){
+    if(payload.query){
+      let response = await searchRecipes(payload.query);
+
+      const recipes = response.results;
+
+      // console.log(recipes);
+
+      await context.commit("setRecipes", recipes);
+      await context.commit(
+        "setLoadedRecipes",
+        recipes.slice(
+          context.state.loadedRecipes.length,
+          context.state.pagination
+        )
+      );
+    }else{
+      context.dispatch('loadLatestRecipes', {forceReload: true});
     }
   }
 };

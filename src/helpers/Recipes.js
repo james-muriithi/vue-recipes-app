@@ -44,6 +44,18 @@ async function fetchRecipe(recipeId) {
   return responseData;
 }
 
+async function searchRecipes(query, number=100){
+  query = encodeURI(query);
+  const url = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=21d1863b6aad44b492d77e877d2b6c06&number=${number}`;
+  const response = await fetch(url);
+
+  const responseData = await response.json();
+  if (!response.ok) {
+    throw new Error(responseData.message || "An error searching for recipes");
+  }
+  return responseData;
+}
+
 export {
   saveRecipes,
   getLocalRecipes,
@@ -52,5 +64,6 @@ export {
   getLocalRecipe,
   fetchRecipe,
   saveFavouriteRecipes,
-  getFavouriteRecipes
+  getFavouriteRecipes,
+  searchRecipes
 };

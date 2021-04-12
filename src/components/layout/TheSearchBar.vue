@@ -16,7 +16,7 @@
 
 
 <script>
-// import _ from "lodash";
+import _ from "lodash";
 export default {
   data() {
     return {
@@ -25,23 +25,26 @@ export default {
   },
   computed: {
     open() {
-        console.log(!!this.query);
       return !!this.query;
     },
   },
   methods: {
     searchRecipes() {
+        if (this.query.length > 2) {
+            this.$store.dispatch("searchRecipe", {query: this.query});
+        }else if (this.query.length == 0) {
+            this.$store.dispatch("searchRecipe", {query: null});
+        }
       console.log(this.query);
-      // this.$store.dispatch("SEARCH_PRODUCTS", this.query);
     },
   },
-  // watch: {
-  //   query: {
-  //     handler: _.debounce(function() {
-  //       this.searchRecipes();
-  //     }, 1000)
-  //   }
-  // }
+  watch: {
+    query: {
+      handler: _.debounce(function() {
+        this.searchRecipes();
+      }, 1500)
+    }
+  }
 };
 </script>
 
