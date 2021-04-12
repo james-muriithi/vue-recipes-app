@@ -1,5 +1,11 @@
 <template>
-  <div class="container pt-5">
+
+  <div class="container pt-4">
+    <div class="row">
+      <div class="col-12 text-right px-0">
+        <the-search-bar></the-search-bar>
+      </div>
+    </div>
     <div class="title text-center">
       <!-- <h2 class="font-weight-700 mb-4 text-main-color">Latest Recipes</h2> -->
       <!-- <div class="dropdown-divider mb-3">
@@ -42,13 +48,15 @@
 <script>
 import { mapGetters, mapActions } from "vuex";
 import RecipeItem from "../../components/recipes/RecipeItem.vue";
+import TheSearchBar from "../../components/layout/TheSearchBar.vue";
 import RecipeItemShimmer from "../../components/recipes/RecipeItemShimmer.vue";
 
 export default {
   name: "App",
   components: {
     RecipeItem,
-    RecipeItemShimmer
+    RecipeItemShimmer,
+    TheSearchBar,
   },
   data() {
     return {

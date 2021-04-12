@@ -1,74 +1,17 @@
 <template>
-  <header class="md-header py-1-half fixed">
+  <header class="md-header py-3 fixed">
     <div class="nav-left">
       <!-- <div class="nav-bar"><i class="material-icons">menu</i></div> -->
       <router-link to="/" class="brand">Recipe App</router-link>
     </div>
     <div class="nav-right">
-      <div class="md-search-bar">
-        <i class="material-icons search-icon" ref="search" @click="openSearch"
-          >search</i
-        >
-        <div class="md-search-bar-input">
-          <input
-            class="md-input-text"
-            v-model.trim="query"
-            type="text"
-            placeholder="Search"
-          />
-          <div class="md-bar"></div>
-          <i class="material-icons" @click="closeSearch">close</i>
-        </div>
-      </div>
+      
     </div>
-    <div class="div nav-mobile-shadow"></div>
   </header>
 </template>
 
-<script>
-// import _ from "lodash";
-export default {
-  data() {
-    return {
-      query: ""
-    };
-  },
-  methods: {
-    openSearch() {
-      if (event) {
-        event.target.parentElement.classList.add("focus");
-        event.target.parentElement.querySelector("input").focus();
-        event.target.classList.add("d-none");
-      }
-    },
-    closeSearch() {
-      if (event) {
-        event.target.parentElement.parentElement.classList.remove("focus");
-        // this.query = '';
-        this.$refs.search.classList.remove("d-none");
-      }
-    },
-    searchRecipes() {
-      console.log(this.query);
-      // this.$store.dispatch("SEARCH_PRODUCTS", this.query);
-    }
-  }
-  // watch: {
-  //   query: {
-  //     handler: _.debounce(function() {
-  //       this.searchRecipes();
-  //     }, 1000)
-  //   }
-  // }
-};
-</script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-.py-1-half {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 6px;
-}
 .brand {
   text-decoration: none;
 }
