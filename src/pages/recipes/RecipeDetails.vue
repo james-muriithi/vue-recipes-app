@@ -109,6 +109,13 @@ export default {
     },
     saveRecipeAsFavourite(id) {
       this.$store.dispatch("saveRecipeAsFavourite", { id });
+    },
+    shareRecipe() {
+      this.$store.dispatch("shareRecipe", {
+        url: `${window.location.href}`,
+        title: this.recipe.title,
+        text: this.recipe.description
+      });
     }
   },
   computed: {

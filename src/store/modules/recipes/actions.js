@@ -87,7 +87,7 @@ export default {
   shareRecipe(_, payload) {
     const title = payload.title,
       url = payload.url,
-      text = `${url}\n\n${title}\n${payload.text || ""}`;
+      text = `${url}\n\n${title}\n${payload.text.substr(0, 250) || ""}`;
 
     if (navigator.share) {
       navigator

@@ -23,6 +23,7 @@
             :title="recipe.title"
             :id="recipe.id"
             :imgSrc="recipe.image"
+            :description="recipe.summary"
           ></recipe-item>
         </transition-group>
       </div>

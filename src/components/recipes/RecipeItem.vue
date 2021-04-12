@@ -60,6 +60,10 @@ export default {
     id: {
       type: Number,
       required: true
+    },
+    description: {
+      type: String,
+      default: '',
     }
   },
   computed: {
@@ -82,7 +86,7 @@ export default {
       this.$store.dispatch("shareRecipe", {
         url: `${window.location.href}recipes/${this.id}`,
         title: this.title,
-        text: ""
+        text: this.description
       });
     }
   }
