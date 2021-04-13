@@ -63,7 +63,7 @@ export default {
     },
     description: {
       type: String,
-      default: '',
+      default: ""
     }
   },
   computed: {

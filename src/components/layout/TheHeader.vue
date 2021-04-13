@@ -4,11 +4,23 @@
       <!-- <div class="nav-bar"><i class="material-icons">menu</i></div> -->
       <router-link to="/" class="brand">Recipe App</router-link>
     </div>
-    <div class="nav-right">
-      
+    <div class="nav-right mr-3">
+      <router-link :to="{ name: 'login' }">
+        Login
+      </router-link>
+      <the-theme-switch></the-theme-switch>
     </div>
   </header>
 </template>
+
+<script>
+import TheThemeSwitch from "./TheThemeSwitch.vue";
+export default {
+  components: {
+    TheThemeSwitch
+  }
+};
+</script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Roboto");

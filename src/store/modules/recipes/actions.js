@@ -104,8 +104,8 @@ export default {
       console.log("share not supported");
     }
   },
-  async searchRecipe(context, payload){
-    if(payload.query){
+  async searchRecipe(context, payload) {
+    if (payload.query) {
       let response = await searchRecipes(payload.query);
 
       const recipes = response.results;
@@ -120,8 +120,8 @@ export default {
           context.state.pagination
         )
       );
-    }else{
-      context.dispatch('loadLatestRecipes', {forceReload: true});
+    } else {
+      context.dispatch("loadLatestRecipes", { forceReload: true });
     }
   }
 };

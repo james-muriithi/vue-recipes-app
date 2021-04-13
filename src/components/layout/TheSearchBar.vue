@@ -14,29 +14,28 @@
   </div>
 </template>
 
-
 <script>
 import _ from "lodash";
 export default {
   data() {
     return {
-      query: "",
+      query: ""
     };
   },
   computed: {
     open() {
       return !!this.query;
-    },
+    }
   },
   methods: {
     searchRecipes() {
-        if (this.query.length > 2) {
-            this.$store.dispatch("searchRecipe", {query: this.query});
-        }else if (this.query.length == 0) {
-            this.$store.dispatch("searchRecipe", {query: null});
-        }
+      if (this.query.length > 2) {
+        this.$store.dispatch("searchRecipe", { query: this.query });
+      } else if (this.query.length == 0) {
+        this.$store.dispatch("searchRecipe", { query: null });
+      }
       console.log(this.query);
-    },
+    }
   },
   watch: {
     query: {

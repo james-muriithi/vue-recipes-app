@@ -44,7 +44,7 @@ async function fetchRecipe(recipeId) {
   return responseData;
 }
 
-async function searchRecipes(query, number=100){
+async function searchRecipes(query, number = 100) {
   query = encodeURI(query);
   const url = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=21d1863b6aad44b492d77e877d2b6c06&number=${number}`;
   const response = await fetch(url);
