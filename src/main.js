@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 // () => import("bootstrap");
 () => import("animate.css");
+import './main.css';
 
 import BaseSpinner from "./components/ui/BaseSpinner.vue";
 

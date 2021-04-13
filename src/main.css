@@ -1,0 +1,13 @@
+:root {
+    /* Variables for default theme (light-mode) */
+    --main-color: #fff!important;
+    --text-color: rgb(54, 53, 55);  
+    --text-grey: rgb(132, 140, 148);
+}
+
+[data-theme="darkMode"] {
+    /* Variables for dark mode */
+    --background-color: rgb(10, 25, 47);
+    --text-color: rgb(244, 244, 244); 
+    --text-grey: rgb(187, 193, 195);  
+}
