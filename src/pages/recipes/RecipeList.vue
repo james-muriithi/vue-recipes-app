@@ -17,7 +17,7 @@
       ></recipe-item-shimmer>
     </div>
     <div v-else>
-      <div v-if="recipes" class="row">
+      <div v-if="recipes.length > 0" class="row">
         <transition-group
           enter-active-class="animate__animated animate__fadeIn"
           leave-active-class="animate__animated animate__fadeOut"
@@ -32,7 +32,7 @@
           ></recipe-item>
         </transition-group>
       </div>
-      <div class="text-center" v-else>
+      <div class="text-center mt-3" v-else>
         <p>No recipes found</p>
       </div>
     </div>
