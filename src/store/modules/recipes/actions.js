@@ -37,7 +37,7 @@ export default {
     context.commit(
       "setLoadedRecipes",
       recipes.slice(
-        context.state.loadedRecipes.length,
+        0,
         context.state.pagination
       )
     );
@@ -111,16 +111,18 @@ export default {
       const recipes = response.results;
 
       // console.log(recipes);
+      const lR = recipes.slice(
+        0,
+        context.state.pagination
+      )
 
       await context.commit("setRecipes", recipes);
       await context.commit(
         "setLoadedRecipes",
-        recipes.slice(
-          context.state.loadedRecipes.length,
-          context.state.pagination
-        )
+        lR
       );
     } else {
+      console.log('eee');
       context.dispatch("loadLatestRecipes", { forceReload: true });
     }
   }
